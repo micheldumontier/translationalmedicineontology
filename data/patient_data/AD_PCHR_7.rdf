@@ -1,0 +1,1005 @@
+<!-- -*- XML -*- --><?xml-stylesheet type="text/xsl" href="Patrdf2html.xsl"?>
+<!-- $Id: AD_PCHR_7.rdf,v 1.1 2009/11/30 00:36:00 eric Exp $ -->
+<rdf:RDF xmlns:indivo="http://indivo.org/vocab/xml/documents#"
+		 xml:base="http://tag:eric@w3.org:2009/pchr/7#"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trans="tag:eric@w3.org:2009/tmo/translator#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:pim="tag:eric@w3.org:2009/pim/basic"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+   <trans:Practice>
+      <trans:practiceName>UNMC Physicians</trans:practiceName>
+      <pim:addr>
+         <pim:Address>
+            <vcard:Street>3604 Summit Plaza Dr.</vcard:Street>
+            <vcard:Pcode>68805</vcard:Pcode>
+            <vcard:Locality>Bellevue</vcard:Locality>
+            <vcard:Region>Nebraska</vcard:Region>
+            <vcard:Country>US</vcard:Country>
+            <pim:timeZone>-6GMT</pim:timeZone>
+            <foaf:phone>14025952275</foaf:phone>
+         </pim:Address>
+      </pim:addr>
+      <trans:primaryCarePhysician>
+         <foaf:Person>
+            <foaf:name>Michael Matthews</foaf:name>
+            <foaf:givenName>Michael</foaf:givenName>
+            <foaf:familyName>Matthews</foaf:familyName>
+            <trans:license>111117</trans:license>
+            <foaf:gender>male</foaf:gender>
+         </foaf:Person>
+      </trans:primaryCarePhysician>
+   </trans:Practice>
+
+   <rdf:Description rdf:about="#me">
+      <trans:demographics rdf:resource="#demog"/>
+   </rdf:Description>
+   <trans:Demographics rdf:about="#demog">
+      <indivo:dateOfBirth>1978-01-31</indivo:dateOfBirth>
+      <indivo:dateOfDeath>XXXX-XX-XX</indivo:dateOfDeath>
+      <indivo:gender>Female</indivo:gender>
+      <indivo:ethnicity>Caucasian</indivo:ethnicity>
+      <indivo:language>EN</indivo:language>
+      <indivo:maritalStatus>Single</indivo:maritalStatus>
+      <indivo:employmentStatus>Not in work force</indivo:employmentStatus>
+      <indivo:employmentIndustry> </indivo:employmentIndustry>
+      <indivo:occupation> </indivo:occupation>
+      <indivo:religion>Christian</indivo:religion>
+      <indivo:income>5,000</indivo:income>
+      <indivo:highestEducation/>
+      <indivo:organDonor>false</indivo:organDonor>
+   </trans:Demographics>
+
+   <foaf:Person rdf:about="#me">
+      <foaf:name>Julianne Sarah Christopherson</foaf:name>
+      <foaf:givenName>Julianne</foaf:givenName>
+      <foaf:familyName>Christopherson</foaf:familyName>
+      <!--personal mbox--><foaf:mbox/>
+      <!--work mbox--><foaf:mbox/>
+      <foaf:address>
+         <pim:Address>
+            <vcard:Street>1207 E. Haven Street</vcard:Street>
+            <vcard:Pcode>68805</vcard:Pcode>
+            <vcard:Locality>Bellevue</vcard:Locality>
+            <vcard:Region>Nebraska</vcard:Region>
+            <vcard:Country>US</vcard:Country>
+            <pim:timeZone>-6GMT</pim:timeZone>
+         </pim:Address>
+      </foaf:address>
+      <pim:location rdf:parseType="Resource">
+         <geo:lat>41N</geo:lat>
+         <geo:long>95W</geo:long>
+      </pim:location>
+      <foaf:phone>4028314040</foaf:phone>
+      <foaf:phone/>
+      <foaf:accountName/>
+   </foaf:Person>
+
+   
+
+
+  
+       <rdf:Description rdf:about="#me">
+      <trans:hasCondition>
+         <trans:Condition><!-- ++ close to indivo:name --><trans:diagnosedWith>Down Syndrome</trans:diagnosedWith>
+            <trans:dateDiagnosed>1978-01-31</trans:dateDiagnosed>
+            <indivo:diagnosedBy>Michael Matthews</indivo:diagnosedBy>
+            <trans:physicianNotes>...</trans:physicianNotes>
+         </trans:Condition>
+      </trans:hasCondition>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasCondition>
+         <trans:Condition><!-- ++ close to indivo:name --><trans:diagnosedWith>Alzheimer’s Disease</trans:diagnosedWith>
+            <trans:dateDiagnosed>2009-02-01</trans:dateDiagnosed>
+            <indivo:diagnosedBy>Michael Matthews</indivo:diagnosedBy>
+            <trans:physicianNotes>...</trans:physicianNotes>
+         </trans:Condition>
+      </trans:hasCondition>
+   </rdf:Description>
+  
+
+
+  
+      <trans:Procedure>
+      <trans:performedOn rdf:resource="#me"/>
+      <!-- ++ close to indivo:Procedure/name --><trans:procedureName>tonsilectomy</trans:procedureName>
+      <indivo:datePerformed>1986-05-22</indivo:datePerformed>
+      <trans:referredBy>Michael Matthews</trans:referredBy>
+      <trans:referredInstitution>Bellevue Medical Center</trans:referredInstitution>
+   </trans:Procedure>
+            
+
+
+  
+       <rdf:Description rdf:about="#me">
+      <trans:hasAllergy>
+         <trans:Allergy>
+            <trans:allergyType>drugs</trans:allergyType>
+            <trans:allergyList>none</trans:allergyList>
+         </trans:Allergy>
+      </trans:hasAllergy>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasAllergy>
+         <trans:Allergy>
+            <trans:allergyType>food</trans:allergyType>
+            <trans:allergyList>peanut butter</trans:allergyList>
+         </trans:Allergy>
+      </trans:hasAllergy>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasAllergy>
+         <trans:Allergy>
+            <trans:allergyType>environment</trans:allergyType>
+            <trans:allergyList>dust</trans:allergyList>
+         </trans:Allergy>
+      </trans:hasAllergy>
+   </rdf:Description>
+  
+
+
+  
+      <rdf:Description rdf:about="#me">
+      <trans:immunization>
+         <trans:Immunization>
+            <trans:diseaseName>measles</trans:diseaseName>
+            <indivo:dateAdministered>1978</indivo:dateAdministered>
+            <trans:method> intramuscular</trans:method>
+            <trans:compound>single</trans:compound>
+            <trans:stage>1</trans:stage>
+            <trans:administeredBy>Michael Matthews</trans:administeredBy>
+         </trans:Immunization>
+      </trans:immunization>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:immunization>
+         <trans:Immunization>
+            <trans:diseaseName>mumps</trans:diseaseName>
+            <indivo:dateAdministered>1978</indivo:dateAdministered>
+            <trans:method>intramuscular</trans:method>
+            <trans:compound>single</trans:compound>
+            <trans:stage>1</trans:stage>
+            <trans:administeredBy>Michael Matthews</trans:administeredBy>
+         </trans:Immunization>
+      </trans:immunization>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:immunization>
+         <trans:Immunization>
+            <trans:diseaseName>rubella</trans:diseaseName>
+            <indivo:dateAdministered>1978</indivo:dateAdministered>
+            <trans:method>intramuscular</trans:method>
+            <trans:compound>single</trans:compound>
+            <trans:stage>1</trans:stage>
+            <trans:administeredBy>Michael Matthews</trans:administeredBy>
+         </trans:Immunization>
+      </trans:immunization>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:immunization>
+         <trans:Immunization>
+            <trans:diseaseName>tetanus</trans:diseaseName>
+            <indivo:dateAdministered>2008</indivo:dateAdministered>
+            <trans:method>intramuscular</trans:method>
+            <trans:compound>single</trans:compound>
+            <trans:stage>1</trans:stage>
+            <trans:administeredBy>Michael Matthews</trans:administeredBy>
+         </trans:Immunization>
+      </trans:immunization>
+   </rdf:Description> 
+   
+
+  
+  
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>alcoholConsumption</trans:behavoirName>
+            <trans:frequency>0</trans:frequency>
+            <trans:units>week</trans:units>
+            <trans:quantity>0</trans:quantity>
+            <trans:date/>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>exercise</trans:behavoirName>
+            <trans:frequency>3</trans:frequency>
+            <trans:units>week</trans:units>
+            <trans:averageDuration>20</trans:averageDuration>
+            <trans:date>2009-0201</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>smoking</trans:behavoirName>
+            <trans:frequency>0</trans:frequency>
+            <trans:units>week</trans:units>
+            <trans:quantity>0</trans:quantity>
+            <trans:history>never</trans:history>
+            <trans:date>2009-02-01</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>diet</trans:behavoirName>
+            <trans:fruitVegetablesRating>5</trans:fruitVegetablesRating>
+            <trans:wholeGrainsRating>3</trans:wholeGrainsRating>
+            <trans:dairyRating>2</trans:dairyRating>
+            <trans:proteinRating>3</trans:proteinRating>
+            <trans:fatsRating>4</trans:fatsRating>
+            <trans:junkFoodRating>2</trans:junkFoodRating>
+            <trans:date>2009-02-01</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+  
+
+
+  
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>maternalGrandmother</trans:relation>
+            <trans:fname>Betty</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>88</trans:ageAtDeath>
+            <trans:cancer>no</trans:cancer>
+            <trans:causeOfDeath>Old Age</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>maternalGrandfather</trans:relation>
+            <trans:fname>Bob</trans:fname>
+            <trans:sex>Male</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>82</trans:ageAtDeath>
+            <trans:cancer>no</trans:cancer>
+            <trans:causeOfDeath>Old Age</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>paternalGrandmother</trans:relation>
+            <trans:fname>Sally</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>yes</trans:alive>
+            <trans:ageAtDeath>67</trans:ageAtDeath>
+            <trans:cancer>no</trans:cancer>
+            <trans:causeOfDeath>Myocardial Infarction</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>paternalGrandfather</trans:relation>
+            <trans:fname>Sam</trans:fname>
+            <trans:sex>Male</trans:sex>
+            <trans:alive>yes</trans:alive>
+            <trans:ageAtDeath>55</trans:ageAtDeath>
+            <trans:cancer>no</trans:cancer>
+            <trans:causeOfDeath>Colorectal Cancer</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>mother</trans:relation>
+            <trans:fname>Shirley</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>yes</trans:alive>
+            <trans:cancer>no</trans:cancer>
+            <trans:misParse>&lt;age&gt;73&lt;/age&gt;</trans:misParse>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>father</trans:relation>
+            <trans:fname>Stanley</trans:fname>
+            <trans:sex>Male</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>55</trans:ageAtDeath>
+            <trans:causeOfDeath>lung cancer</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>sister</trans:relation>
+            <trans:fname>Elizabeth</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>yes</trans:alive>
+            <trans:cancer>no</trans:cancer>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>sister</trans:relation>
+            <trans:fname>MarySue</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>yes</trans:alive>
+            <trans:cancer>no</trans:cancer>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+
+
+
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>Michael Matthews</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2008-11-15</trans:dateOfEncounter>
+      <trans:physician>Michael Matthews</trans:physician>
+      <trans:medicalBaseline>true</trans:medicalBaseline>
+      <trans:medicalTest>Annual Medical</trans:medicalTest>
+      <trans:reportedSymptoms>true</trans:reportedSymptoms>
+      <trans:workingDiagnosis>true</trans:workingDiagnosis>
+      <trans:referral>false</trans:referral>
+      <trans:physicalObservations rdf:parseType="Resource">
+         <trans:bodyFat_x5 rdf:parseType="Resource">
+            <trans:x6_bodyFat rdf:datatype="tag:eric@w3.org:2009/tmo/translator#percent">24</trans:x6_bodyFat>
+            <trans:weight rdf:datatype="tag:eric@w3.org:2009/tmo/translator#pounds">130</trans:weight>
+            <trans:height rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">60</trans:height>
+            <trans:BMI rdf:datatype="tag:eric@w3.org:2009/tmo/translator#kg/m^2">25</trans:BMI>
+         </trans:bodyFat_x5>
+         <trans:waistToHips rdf:parseType="Resource">
+            <trans:waist rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">33</trans:waist>
+            <trans:hips rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">42</trans:hips>
+            <trans:waistToHips>0.8</trans:waistToHips>
+         </trans:waistToHips>
+         <trans:bloodPressure rdf:parseType="Resource">
+            <trans:systolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">125</trans:systolic>
+            <trans:diastolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">78</trans:diastolic>
+         </trans:bloodPressure>
+         <trans:restingHeartRate rdf:parseType="Resource">
+            <trans:restingHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">80</trans:restingHeartRate>
+         </trans:restingHeartRate>
+         <trans:stamina rdf:parseType="Resource">
+            <trans:finalHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">135</trans:finalHeartRate>
+            <trans:predictedVO2Max rdf:datatype="tag:eric@w3.org:2009/tmo/translator#ml/kg/min">49.2</trans:predictedVO2Max>
+         </trans:stamina>
+         <trans:lungFunction rdf:parseType="Resource">
+            <trans:PEFR rdf:datatype="tag:eric@w3.org:2009/tmo/translator#L/min">560</trans:PEFR>
+         </trans:lungFunction>
+      </trans:physicalObservations>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>85025</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC and platelet count) and automated differential WBC count</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Baljit Gupta&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>Eastside Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:testSet>
+            <CompleteBloodCount xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>85025</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HGB</trans:x_3>
+                  <trans:CPT>85018</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hemogloblin</trans:description>
+                  <trans:value>13.3</trans:value>
+                  <trans:units>g/dL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>RBC</trans:x_3>
+                  <trans:CPT>85041</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Red Blood Cell Count</trans:description>
+                  <trans:value>5</trans:value>
+                  <trans:units>mil/mcl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCV</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Cell Volume</trans:description>
+                  <trans:value>92</trans:value>
+                  <trans:units>fl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCH</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin</trans:description>
+                  <trans:value>30</trans:value>
+                  <trans:units>pg/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ART</trans:x_3>
+                  <trans:CPT>85045</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Reticulocyte Count</trans:description>
+                  <trans:value>1</trans:value>
+                  <trans:units>as a percent of red cells</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ESR</trans:x_3>
+                  <trans:CPT>85652</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Erythrocyte Sed Rate</trans:description>
+                  <trans:value>20</trans:value>
+                  <trans:units/>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>WBC</trans:x_3>
+                  <trans:CPT>85048</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>White Blood Cell Count</trans:description>
+                  <trans:value>12</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ANEUT</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Neutrophil Count</trans:description>
+                  <trans:value>8</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALYMS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Lymphocyte Count</trans:description>
+                  <trans:value>3</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AMON</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Monocyte Count</trans:description>
+                  <trans:value>0.7</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AEOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Eosinophil Count</trans:description>
+                  <trans:value>0.2</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ABOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Basophil Count</trans:description>
+                  <trans:value>0.1</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+            </CompleteBloodCount>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80061</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Lipid panel</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Baljit Gupta&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>Eastside Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:testSet>
+            <LipidPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80061</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>LDL</trans:x_3>
+                  <trans:CPT>83721</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> Low-density lipoprotein</trans:description>
+                  <trans:value>4</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TRIG</trans:x_3>
+                  <trans:CPT>84478</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> Triglycerides</trans:description>
+                  <trans:value>2.6</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CHO</trans:x_3>
+                  <trans:CPT>82465</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> Triglycerides</trans:description>
+                  <trans:value>5</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HDL</trans:x_3>
+                  <trans:CPT>83718</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> Triglycerides</trans:description>
+                  <trans:value>1</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+            </LipidPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80076</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Hepatic function panel</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Baljit Gupta&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>Eastside Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:testSet>
+            <HepaticFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80076</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TP</trans:x_3>
+                  <trans:CPT>84155</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Total Protein</trans:description>
+                  <trans:value>62</trans:value>
+                  <trans:units>g/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AST</trans:x_3>
+                  <trans:CPT>84450</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum glutamic-oxaloacetic transaminase</trans:description>
+                  <trans:value>88</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CK</trans:x_3>
+                  <trans:CPT>82550</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Creatinine kinase</trans:description>
+                  <trans:value>66</trans:value>
+                  <trans:units>U/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>LDH</trans:x_3>
+                  <trans:CPT>83615</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Lactate dehydrogenase</trans:description>
+                  <trans:value>222</trans:value>
+                  <trans:units>U/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AMY</trans:x_3>
+                  <trans:CPT>82150</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Amylase</trans:description>
+                  <trans:value>144</trans:value>
+                  <trans:units>U/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TBIL</trans:x_3>
+                  <trans:CPT>82247</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Bilirubin, Total</trans:description>
+                  <trans:value>20</trans:value>
+                  <trans:units>umol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>DBL</trans:x_3>
+                  <trans:CPT>82248</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Bilirubin, Direct</trans:description>
+                  <trans:value>17</trans:value>
+                  <trans:units>umol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALT</trans:x_3>
+                  <trans:CPT>84460</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Alanine transaminase</trans:description>
+                  <trans:value>22</trans:value>
+                  <trans:units>U/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALP</trans:x_3>
+                  <trans:CPT>84075</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Alkaline Phosphatase</trans:description>
+                  <trans:value>122</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GGT</trans:x_3>
+                  <trans:CPT>82977</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Gamma Glutamyl Transferase</trans:description>
+                  <trans:value>242</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CRP</trans:x_3>
+                  <trans:CPT>86140</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum C-Reactive Protein</trans:description>
+                  <trans:value>66</trans:value>
+                  <trans:units>mg/L</trans:units>
+               </trans:testCode>
+            </HepaticFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80069</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Renal function panel</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Baljit Gupta&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>Eastside Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:testSet>
+            <RenalFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80069</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>NA</trans:x_3>
+                  <trans:CPT>84295</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Sodium</trans:description>
+                  <trans:value>133</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>K</trans:x_3>
+                  <trans:CPT>84132</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Potassium</trans:description>
+                  <trans:value>4</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CREA</trans:x_3>
+                  <trans:CPT>82565</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Creatinine</trans:description>
+                  <trans:value>111</trans:value>
+                  <trans:units>umol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALB</trans:x_3>
+                  <trans:CPT>82040</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Albumin</trans:description>
+                  <trans:value>39</trans:value>
+                  <trans:units>g/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GLU</trans:x_3>
+                  <trans:CPT>82945</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Glucose Urine Test</trans:description>
+                  <trans:value>7</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CA</trans:x_3>
+                  <trans:CPT>82310</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Calcium</trans:description>
+                  <trans:value>2.23</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CAI</trans:x_3>
+                  <trans:CPT>82330</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Ionized Calcium, Serum</trans:description>
+                  <trans:value>1.01</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>BUN</trans:x_3>
+                  <trans:CPT>84520</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Blood Urea Nitrogen</trans:description>
+                  <trans:value>5</trans:value>
+                  <trans:units>umol/L</trans:units>
+               </trans:testCode>
+            </RenalFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>84443</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Thyroid stimulating hormone (TSH)</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Baljit Gupta&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>Eastside Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:testSet>
+            <ThyroidFunction xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>84443</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TSH</trans:x_3>
+                  <trans:CPT>84443</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Thyroid Stimulating Hormone</trans:description>
+                  <trans:value>2</trans:value>
+                  <trans:units>mIU/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>FT4</trans:x_3>
+                  <trans:CPT>84439</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>T4, Free</trans:description>
+                  <trans:value>17</trans:value>
+                  <trans:units>pmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>T3F</trans:x_3>
+                  <trans:CPT>84481</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>T3, Free</trans:description>
+                  <trans:value>4</trans:value>
+                  <trans:units>pmol/L</trans:units>
+               </trans:testCode>
+            </ThyroidFunction>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80412</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Corticotropic Releasing Hormone Stimulation Panel</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Baljit Gupta&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>Eastside Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:testSet>
+            <CRH xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80412</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ACH</trans:x_3>
+                  <trans:CPT>82024</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Adrenocorticotropic hormone</trans:description>
+                  <trans:value>3</trans:value>
+                  <trans:units>pmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CTL</trans:x_3>
+                  <trans:CPT>82533</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Cortisol</trans:description>
+                  <trans:value>522</trans:value>
+                  <trans:units>nmol/L</trans:units>
+               </trans:testCode>
+            </CRH>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>85999</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>CoagulationBattery</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Baljit Gupta&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>Eastside Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:testSet>
+            <Coagulation xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>85999</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>PT</trans:x_3>
+                  <trans:CPT>85610</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Prothrombin time</trans:description>
+                  <trans:value>11</trans:value>
+                  <trans:units>s</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>INR</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>INR</trans:description>
+                  <trans:value>1.0</trans:value>
+                  <trans:units/>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>Bleeding Time</trans:x_3>
+                  <trans:CPT>85002</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Bleeding time</trans:description>
+                  <trans:value>6</trans:value>
+                  <trans:units>min</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>FIB</trans:x_3>
+                  <trans:CPT>85384</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Fibrinogen</trans:description>
+                  <trans:value>3</trans:value>
+                  <trans:units>g/L</trans:units>
+               </trans:testCode>
+            </Coagulation>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter>
+
+
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>Michael Matthews</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2009-01-15</trans:dateOfEncounter>
+      <trans:physician>Michael Matthews</trans:physician>
+      <trans:medicalBaseline>false</trans:medicalBaseline>
+      <trans:medicalTest>false</trans:medicalTest>
+      <trans:reportedSymptoms>Confusion, Becomes lost</trans:reportedSymptoms>
+      <trans:workingDiagnosis>
+       
+       
+    </trans:workingDiagnosis>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#ICD9 Procedure"/>
+         <trans:misParse>&lt;ICD9_Procedure&gt;94.02&lt;/ICD9_Procedure&gt;</trans:misParse>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Administration of psychologic test</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Keil Fender&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>UNMC</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:result rdf:parseType="Resource">
+            <trans:misParse>&lt;description&gt;&lt;/description&gt;</trans:misParse>
+            <trans:value/>
+            <trans:misParse>&lt;units&gt;&lt;/units&gt;</trans:misParse>
+         </trans:result>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#ICD9_Procedure"/>
+         <trans:misParse>&lt;ICD9_Procedure&gt;88.91&lt;/ICD9_Procedure&gt;</trans:misParse>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Magnetic resonance imaging of brain and brain stem</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Sarah Yang&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>Midtown Hospital</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:result rdf:parseType="Resource"/>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>85025</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC and platelet count) and automated differential WBC count</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Baljit Gupta&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>Eastside Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:testSet>
+            <CompleteBloodCount xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>85025</trans:x_3>
+          
+            </CompleteBloodCount>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter>
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>Keil Fender</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2009-01-20</trans:dateOfEncounter>
+      <trans:physician>Keil Fender</trans:physician>
+      <trans:medicalBaseline>false</trans:medicalBaseline>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:workingDiagnosis>
+       
+       
+       
+    </trans:workingDiagnosis>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Cognative"/>
+         <trans:CPT>97532</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Alzheimer's Disease Assessment Scale-cognitive subscale</trans:testName>
+         <trans:misParse>&lt;referredName&gt;Mary Lubker&lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic>Neurology Specialists</trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:result rdf:parseType="Resource">
+            <trans:misParse>&lt;testScore&gt;???&lt;/testScore&gt;</trans:misParse>
+            <trans:misParse>&lt;testNormalRange&gt;????&lt;/testNormalRange&gt;</trans:misParse>
+            <trans:misParse>&lt;testResult&gt;abnormal&lt;/testResult&gt;</trans:misParse>
+         </trans:result>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Genotyping SNPs"/>
+         <trans:CPT> 83520(3), 83891(1), 83892(4), 83896(10), 83908(4), 83912(1)</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>ADmark Alzheimer's Evaluation</trans:testName>
+         <trans:misParse>&lt;referredName&gt; Mary Lubker &lt;/referredName&gt;</trans:misParse>
+         <trans:referredClinic> Neurology Specialists </trans:referredClinic>
+         <trans:referredBy>Michael Matthews</trans:referredBy>
+         <trans:result rdf:parseType="Resource">
+            <trans:value>abnormal</trans:value>
+            <trans:rs_Number> rs429358</trans:rs_Number>
+            <trans:variant_Synonyms>APOE4, NG_007084.2:g.7903T&gt;C</trans:variant_Synonyms>
+            <trans:gene_Symbol>APOE</trans:gene_Symbol>
+            <trans:gene_Name> apolipoprotein E</trans:gene_Name>
+            <trans:ENTREZ_Gene_ID>348</trans:ENTREZ_Gene_ID>
+            <trans:Accession_ID> NG_007084.2</trans:Accession_ID>
+            <trans:Gene_Region>coding_region</trans:Gene_Region>
+            <trans:DNA_Change>g.7903T&gt;C</trans:DNA_Change>
+            <trans:DNA_Change_Type>Substitution</trans:DNA_Change_Type>
+            <trans:Amino_Acid_Change>C112R</trans:Amino_Acid_Change>
+            <trans:Amino_Acid_Change_Type>Missense</trans:Amino_Acid_Change_Type>
+         </trans:result>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter> 
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>Kerri Fallen</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2009-01-30</trans:dateOfEncounter>
+      <trans:physician>Kerri Fallen</trans:physician>
+      <trans:medicalBaseline>false</trans:medicalBaseline>
+      <trans:medicalTest>
+         
+      </trans:medicalTest>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:workingDiagnosis>Alzheimers Disease</trans:workingDiagnosis>
+   </trans:Encounter>
+</rdf:RDF>

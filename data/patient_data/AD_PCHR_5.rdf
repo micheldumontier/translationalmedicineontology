@@ -1,0 +1,862 @@
+<!-- -*- XML -*- --><?xml-stylesheet type="text/xsl" href="Patrdf2html.xsl"?>
+<!-- $Id: AD_PCHR_5.rdf,v 1.1 2009/11/29 22:31:43 eric Exp $ -->
+<rdf:RDF xmlns:indivo="http://indivo.org/vocab/xml/documents#"
+		 xml:base="http://tag:eric@w3.org:2009/pchr/5#"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trans="tag:eric@w3.org:2009/tmo/translator#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:pim="tag:eric@w3.org:2009/pim/basic"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+   <trans:Practice>
+      <trans:practiceName>Ärztezentrum Schweizer Viertel</trans:practiceName>
+      <pim:addr>
+         <pim:Address>
+            <vcard:Street>Lausanner Straße 85</vcard:Street>
+            <vcard:Pcode>12205</vcard:Pcode>
+            <vcard:Locality>Berlin</vcard:Locality>
+            <vcard:Region>Berlin</vcard:Region>
+            <vcard:Country>DE</vcard:Country>
+            <pim:timeZone>+1GMT</pim:timeZone>
+            <foaf:phone>0049308418640</foaf:phone>
+         </pim:Address>
+      </pim:addr>
+      <trans:primaryCarePhysician>
+         <foaf:Person>
+            <foaf:name>David Winizki</foaf:name>
+            <foaf:givenName>David</foaf:givenName>
+            <foaf:familyName>Winizki</foaf:familyName>
+            <trans:license>AG 3647382</trans:license>
+            <foaf:gender>male</foaf:gender>
+         </foaf:Person>
+      </trans:primaryCarePhysician>
+   </trans:Practice>
+
+   <rdf:Description rdf:about="#me">
+      <trans:demographics rdf:resource="#demog"/>
+   </rdf:Description>
+   <trans:Demographics rdf:about="#demog">
+      <indivo:dateOfBirth>1945-04-05</indivo:dateOfBirth>
+      <indivo:dateOfDeath/>
+      <indivo:gender>Male</indivo:gender>
+      <indivo:ethnicity>German</indivo:ethnicity>
+      <indivo:language>DE</indivo:language>
+      <indivo:maritalStatus>married</indivo:maritalStatus>
+      <indivo:employmentStatus>employed</indivo:employmentStatus>
+      <indivo:employmentIndustry>Library</indivo:employmentIndustry>
+      <indivo:occupation>Librarian</indivo:occupation>
+      <indivo:religion>Atheist</indivo:religion>
+      <indivo:income>37,000 EUR</indivo:income>
+      <indivo:highestEducation>MA</indivo:highestEducation>
+      <indivo:organDonor>true</indivo:organDonor>
+   </trans:Demographics>
+
+
+   <foaf:Person rdf:about="#me">
+      <foaf:name>Georg Steffen Möller</foaf:name>
+      <foaf:givenName>Georg</foaf:givenName>
+      <foaf:familyName>Möller</foaf:familyName>
+      <!--personal mbox--><foaf:mbox>georg.moeller@mail.de</foaf:mbox>
+      <!--work mbox--><foaf:mbox>
+    </foaf:mbox>
+      <foaf:address>
+         <pim:Address>
+            <vcard:Street>Fichtenweg 13</vcard:Street>
+            <vcard:Pcode>12345</vcard:Pcode>
+            <vcard:Locality>Berlin</vcard:Locality>
+            <vcard:Region>Berlin</vcard:Region>
+            <vcard:Country>DE</vcard:Country>
+            <pim:timeZone>+1GMT</pim:timeZone>
+         </pim:Address>
+      </foaf:address>
+      <pim:location rdf:parseType="Resource">
+         <geo:lat>51N</geo:lat>
+         <geo:long>13E</geo:long>
+      </pim:location>
+      <foaf:phone>030-987654321</foaf:phone>
+      <foaf:phone>0160-987654321</foaf:phone>
+      <foaf:accountName/>
+   </foaf:Person>
+
+   
+      <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC>5456944671</trans:NDC>
+      <trans:misParse>&lt;tradeName&gt;ATORVASTATIN TABLET&lt;/tradeName&gt;</trans:misParse>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>20</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>MG</trans:unit>
+      <trans:packSize>90</trans:packSize>
+      <trans:packType>BOT</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>TABLET, FILM COATED</trans:dosageName>
+      <trans:frequency>o.d.</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>8</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>ongoing</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>David Winizki</trans:prescribedBy>
+      <indivo:prescribedOn>2008-02-03</indivo:prescribedOn>
+      <trans:datePrescriptionEnded>false</trans:datePrescriptionEnded>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+      <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC>000007414020</trans:NDC>
+      <trans:misParse>&lt;tradeName&gt;COREG TABLETS&lt;/tradeName&gt;</trans:misParse>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>6.25</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>MG</trans:unit>
+      <trans:packSize>100</trans:packSize>
+      <trans:packType>BOT</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>TABLET, FILM COATED</trans:dosageName>
+      <trans:frequency>b.i.d.</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>13</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>ongoing</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>David Winizki</trans:prescribedBy>
+      <indivo:prescribedOn>2008-05-06</indivo:prescribedOn>
+      <trans:datePrescriptionEnded>false</trans:datePrescriptionEnded>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+      <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC>6050502532</trans:NDC>
+      <trans:misParse>&lt;tradeName&gt;Clopidogrel Bisulfate&lt;/tradeName&gt;</trans:misParse>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>75</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>MG</trans:unit>
+      <trans:packSize>90</trans:packSize>
+      <trans:packType>BOT</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>TABLET, FILM COATED</trans:dosageName>
+      <trans:frequency>o.d.</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>13</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>ongoing</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>David Winizki</trans:prescribedBy>
+      <indivo:prescribedOn>2008-05-06</indivo:prescribedOn>
+      <trans:datePrescriptionEnded>false</trans:datePrescriptionEnded>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+      <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC>6050500652</trans:NDC>
+      <trans:misParse>&lt;tradeName&gt;Omeprazole&lt;/tradeName&gt;</trans:misParse>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>20</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>MG</trans:unit>
+      <trans:packSize>100</trans:packSize>
+      <trans:packType>BOT</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>CAPSULE</trans:dosageName>
+      <trans:frequency>o.d.</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>1</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>ongoing</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>David Winizki</trans:prescribedBy>
+      <indivo:prescribedOn>2009-06-18</indivo:prescribedOn>
+      <trans:datePrescriptionEnded>false</trans:datePrescriptionEnded>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+     <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC>0093732098</trans:NDC>
+      <trans:misParse>&lt;tradeName&gt;DONEPEZIL HYDROCHLORIDE TABLETS&lt;/tradeName&gt;</trans:misParse>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>5.00</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>MG</trans:unit>
+      <trans:packSize>90</trans:packSize>
+      <trans:packType>BLPK</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>TABLET</trans:dosageName>
+      <trans:frequency>o.d.</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>0</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>90</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>David Winizki</trans:prescribedBy>
+      <indivo:prescribedOn>2009-07-22</indivo:prescribedOn>
+      <trans:datePrescriptionEnded>2009-10-29</trans:datePrescriptionEnded>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+
+
+  
+       <rdf:Description rdf:about="#me">
+      <trans:hasCondition>
+         <trans:Condition><!-- ++ close to indivo:name --><trans:diagnosedWith>hypertension</trans:diagnosedWith>
+            <trans:ICD9>410</trans:ICD9>
+            <trans:dateDiagnosed>2008-02-03</trans:dateDiagnosed>
+            <indivo:diagnosedBy>David Winizki</indivo:diagnosedBy>
+            <trans:physicianNotes>...</trans:physicianNotes>
+         </trans:Condition>
+      </trans:hasCondition>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasCondition>
+         <trans:Condition><!-- ++ close to indivo:name --><trans:diagnosedWith>alzheimer’s disease</trans:diagnosedWith>
+            <trans:ICD9>331</trans:ICD9>
+            <trans:dateDiagnosed>2009-07-21</trans:dateDiagnosed>
+            <indivo:diagnosedBy>David Winizki</indivo:diagnosedBy>
+            <trans:physicianNotes>...</trans:physicianNotes>
+         </trans:Condition>
+      </trans:hasCondition>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasCondition>
+         <trans:Condition><!-- ++ close to indivo:name --><trans:diagnosedWith>acute coronary occlusion without myocardial infarction</trans:diagnosedWith>
+            <trans:ICD9>414</trans:ICD9>
+            <trans:dateDiagnosed>2008-05-06</trans:dateDiagnosed>
+            <indivo:diagnosedBy>David Winizki</indivo:diagnosedBy>
+            <trans:physicianNotes>...</trans:physicianNotes>
+         </trans:Condition>
+      </trans:hasCondition>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasCondition>
+         <trans:Condition><!-- ++ close to indivo:name --><trans:diagnosedWith>gastroesophageal reflux disease</trans:diagnosedWith>
+            <trans:ICD9>530.81</trans:ICD9>
+            <trans:dateDiagnosed>2009-06-18</trans:dateDiagnosed>
+            <indivo:diagnosedBy>David Winizki</indivo:diagnosedBy>
+            <trans:physicianNotes>...</trans:physicianNotes>
+         </trans:Condition>
+      </trans:hasCondition>
+   </rdf:Description>
+  
+
+
+  
+   
+
+
+  
+       <rdf:Description rdf:about="#me">
+      <trans:hasAllergy>
+         <trans:Allergy>
+            <trans:allergyType>drugs</trans:allergyType>
+            <trans:allergyList>none</trans:allergyList>
+         </trans:Allergy>
+      </trans:hasAllergy>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasAllergy>
+         <trans:Allergy>
+            <trans:allergyType>food</trans:allergyType>
+            <trans:allergyList>none</trans:allergyList>
+         </trans:Allergy>
+      </trans:hasAllergy>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasAllergy>
+         <trans:Allergy>
+            <trans:allergyType>environment</trans:allergyType>
+            <trans:allergyList>mold</trans:allergyList>
+         </trans:Allergy>
+      </trans:hasAllergy>
+   </rdf:Description>
+  
+
+
+  
+  
+
+  
+
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>alcoholConsumption</trans:behavoirName>
+            <trans:frequency>2</trans:frequency>
+            <trans:units>month</trans:units>
+            <trans:quantity>1</trans:quantity>
+            <trans:date>2002-02-02</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>exercise</trans:behavoirName>
+            <trans:frequency>1</trans:frequency>
+            <trans:units>week</trans:units>
+            <trans:averageDuration>60</trans:averageDuration>
+            <trans:date>2002-02-02</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>smoking</trans:behavoirName>
+            <trans:packYears>0</trans:packYears>
+            <trans:history>5 years</trans:history>
+            <trans:date>2002-02-02</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>diet</trans:behavoirName>
+            <trans:fruitVegetablesRating>3</trans:fruitVegetablesRating>
+            <trans:wholeGrainsRating>6</trans:wholeGrainsRating>
+            <trans:dairyRating>4</trans:dairyRating>
+            <trans:proteinRating>4</trans:proteinRating>
+            <trans:fatsRating>7</trans:fatsRating>
+            <trans:junkFoodRating>6</trans:junkFoodRating>
+            <trans:date>2002-02-02</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+  
+
+  
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>maternalGrandmother</trans:relation>
+            <trans:fname>Susie</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>24</trans:ageAtDeath>
+            <trans:cancer>no</trans:cancer>
+            <trans:causeOfDeath>TB</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>maternalGrandfather</trans:relation>
+            <trans:fname>Paul</trans:fname>
+            <trans:sex>Male</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>81</trans:ageAtDeath>
+            <trans:cancer>no</trans:cancer>
+            <trans:causeOfDeath>Old Age</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>paternalGrandmother</trans:relation>
+            <trans:fname>Betty</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>62</trans:ageAtDeath>
+            <trans:cancer>no</trans:cancer>
+            <trans:causeOfDeath>myocardialInfarction</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>paternalGrandfather</trans:relation>
+            <trans:fname>Gary</trans:fname>
+            <trans:sex>Male</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>45</trans:ageAtDeath>
+            <trans:cancer>no</trans:cancer>
+            <trans:causeOfDeath>MedicalError</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>mother</trans:relation>
+            <trans:fname>Elizabeth</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>yes</trans:alive>
+            <trans:cancer>no</trans:cancer>
+            <!--@@ x_1="RA", whatever that means--><trans:medicalConditions>yes</trans:medicalConditions>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>father</trans:relation>
+            <trans:fname>Frank</trans:fname>
+            <trans:sex>Male</trans:sex>
+            <trans:alive>yes</trans:alive>
+            <trans:cancer>yes</trans:cancer>
+            <trans:cancerType>Colorectal</trans:cancerType>
+            <trans:cancerTypeColorectalAge>62</trans:cancerTypeColorectalAge>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>brother</trans:relation>
+            <trans:fname>Jake</trans:fname>
+            <trans:sex>Male</trans:sex>
+            <trans:alive>yes</trans:alive>
+            <trans:cancer>no</trans:cancer>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>David Winizki</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2002-02-02</trans:dateOfEncounter>
+      <trans:physician>David Winizki</trans:physician>
+      <trans:referral>false</trans:referral>
+      <trans:medicalBaseline>true</trans:medicalBaseline>
+      <trans:medicalTest>Annual Medical</trans:medicalTest>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:workingDiagnosis>false</trans:workingDiagnosis>
+      <trans:physicalObservations rdf:parseType="Resource">
+         <trans:bodyFat_x5 rdf:parseType="Resource">
+            <trans:x6_bodyFat rdf:datatype="tag:eric@w3.org:2009/tmo/translator#percent">21</trans:x6_bodyFat>
+            <trans:misParse>&lt;weight units="kilogram"&gt;67&lt;/weight&gt;</trans:misParse>
+            <trans:misParse>&lt;height units="centimeter"&gt;173&lt;/height&gt;</trans:misParse>
+            <trans:BMI rdf:datatype="tag:eric@w3.org:2009/tmo/translator#kg/m^2">22</trans:BMI>
+         </trans:bodyFat_x5>
+         <trans:waistToHips rdf:parseType="Resource">
+            <trans:waist rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">32</trans:waist>
+            <trans:hips rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">38</trans:hips>
+            <trans:waistToHips>0.8</trans:waistToHips>
+         </trans:waistToHips>
+         <trans:bloodPressure rdf:parseType="Resource">
+            <trans:systolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">143</trans:systolic>
+            <trans:diastolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">90</trans:diastolic>
+         </trans:bloodPressure>
+         <trans:restingHeartRate rdf:parseType="Resource">
+            <trans:restingHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">75</trans:restingHeartRate>
+         </trans:restingHeartRate>
+         <trans:stamina rdf:parseType="Resource">
+            <trans:finalHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">130</trans:finalHeartRate>
+            <trans:predictedVO2Max rdf:datatype="tag:eric@w3.org:2009/tmo/translator#ml/kg/min">50</trans:predictedVO2Max>
+         </trans:stamina>
+         <trans:lungFunction rdf:parseType="Resource">
+            <trans:PEFR rdf:datatype="tag:eric@w3.org:2009/tmo/translator#L/min">6</trans:PEFR>
+         </trans:lungFunction>
+      </trans:physicalObservations>
+   </trans:Encounter>
+
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>David Winziski</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2008-03-02</trans:dateOfEncounter>
+      <trans:physician>David Winziski</trans:physician>
+      <trans:referral>false</trans:referral>
+      <trans:medicalBaseline>true</trans:medicalBaseline>
+      <trans:medicalTest>true</trans:medicalTest>
+      <trans:reportedSymptoms>headache, somnolence</trans:reportedSymptoms>
+      <trans:workingDiagnosis>
+       
+       
+       
+    </trans:workingDiagnosis>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#ECG"/>
+         <trans:CPT>120002</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Rhythm ECG</trans:testName>
+         <trans:referredTo>Daniel Schmidt</trans:referredTo>
+         <trans:referredClinic>Herzzentrum</trans:referredClinic>
+         <trans:referredBy>David Winziski</trans:referredBy>
+         <trans:result rdf:parseType="Resource">
+            <trans:misParse>&lt;testScore&gt;&lt;/testScore&gt;</trans:misParse>
+            <trans:misParse>&lt;testNormalRange&gt;&lt;/testNormalRange&gt;</trans:misParse>
+            <trans:misParse>&lt;testResult&gt;abnormal&lt;/testResult&gt;</trans:misParse>
+         </trans:result>
+         <trans:misParse>&lt;originalImage&gt;&lt;/originalImage&gt;</trans:misParse>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter>
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>David Winziski</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2008-05-06</trans:dateOfEncounter>
+      <trans:physician>David Winziski</trans:physician>
+      <trans:referral>false</trans:referral>
+      <trans:medicalBaseline>true</trans:medicalBaseline>
+      <trans:medicalTest>true</trans:medicalTest>
+      <trans:reportedSymptoms>chest pain, nausea, diaphoresis</trans:reportedSymptoms>
+      <trans:workingDiagnosis>acute coronary syndrome</trans:workingDiagnosis>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>11111222</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Blood Test</trans:testName>
+         <trans:referredTo>Daniel Schmidt</trans:referredTo>
+         <trans:referredClinic>Herzzentrum</trans:referredClinic>
+         <trans:referredBy>David Winziski</trans:referredBy>
+         <trans:testSet>
+            <CompleteBloodCount xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>11111222</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HGB</trans:x_3>
+                  <trans:CPT>111112221</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hemogloblin</trans:description>
+                  <trans:value>13.1</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>RBC</trans:x_3>
+                  <trans:CPT>111112222</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Red Blood Cell Count</trans:description>
+                  <trans:value>5</trans:value>
+                  <trans:units>mil/mcl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HCT</trans:x_3>
+                  <trans:CPT>111112223</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hematocrit</trans:description>
+                  <trans:value>42.0</trans:value>
+                  <trans:units>percent</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCV</trans:x_3>
+                  <trans:CPT>111112224</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Mean Cell Volume</trans:description>
+                  <trans:value>92</trans:value>
+                  <trans:units>fl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCH</trans:x_3>
+                  <trans:CPT>111112225</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin</trans:description>
+                  <trans:value>34</trans:value>
+                  <trans:units>pg/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCHC</trans:x_3>
+                  <trans:CPT>111112226</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin Concentration</trans:description>
+                  <trans:value>33.8</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>PLTC</trans:x_3>
+                  <trans:CPT>111112227</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Platelet Count</trans:description>
+                  <trans:value>291</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>WBC</trans:x_3>
+                  <trans:CPT>111112228</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>White Blood Cell Count</trans:description>
+                  <trans:value>10</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ANEUT</trans:x_3>
+                  <trans:CPT>111112229</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Neutrophil Count</trans:description>
+                  <trans:value>7</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALYMS</trans:x_3>
+                  <trans:CPT>1111122210</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Lymphocyte Count</trans:description>
+                  <trans:value>2</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AMON</trans:x_3>
+                  <trans:CPT>1111122210</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Monocyte Count</trans:description>
+                  <trans:value>0.4</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AEOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Eosinophil Count</trans:description>
+                  <trans:value>0.4</trans:value>
+                  <trans:units>K/mcL</trans:units>
+               </trans:testCode>
+            </CompleteBloodCount>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>11111223</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Renal function panel</trans:testName>
+         <trans:referredTo>Daniel Schmidt</trans:referredTo>
+         <trans:referredClinic>Herzzentrum</trans:referredClinic>
+         <trans:referredBy>David Winziski</trans:referredBy>
+         <trans:testSet>
+            <RenalFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>11111223</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>NA</trans:x_3>
+                  <trans:CPT>111112231</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Sodium</trans:description>
+                  <trans:value>137</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>K</trans:x_3>
+                  <trans:CPT>111112232</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Potassium</trans:description>
+                  <trans:value>4</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALB</trans:x_3>
+                  <trans:CPT>111112233</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Albumin</trans:description>
+                  <trans:value>39</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CREA</trans:x_3>
+                  <trans:CPT>111112234</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Creatinine</trans:description>
+                  <trans:value>104</trans:value>
+                  <trans:units>μmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>BUN</trans:x_3>
+                  <trans:CPT>111112234</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Blood Urea Nitrogen</trans:description>
+                  <trans:value>5</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GLU</trans:x_3>
+                  <trans:CPT>111112236</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Glucose Serum Test</trans:description>
+                  <trans:value>5</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CA</trans:x_3>
+                  <trans:CPT>82310</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Calcium</trans:description>
+                  <trans:value>1.01</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CNA</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Corrected Calcium Level</trans:description>
+                  <trans:value>2.09</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+            </RenalFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>11111225</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Hepatic function panel</trans:testName>
+         <trans:referredTo>Daniel Schmidt</trans:referredTo>
+         <trans:referredClinic>Herzzentrum</trans:referredClinic>
+         <trans:referredBy>David Winziski</trans:referredBy>
+         <trans:testSet>
+            <HepaticFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>11111225</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TP</trans:x_3>
+                  <trans:CPT>111112251</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Total Protein</trans:description>
+                  <trans:value>8</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TBIL</trans:x_3>
+                  <trans:CPT>111112252</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Bilirubin, Total</trans:description>
+                  <trans:value>13</trans:value>
+                  <trans:units>μmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALP</trans:x_3>
+                  <trans:CPT>111112253</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Alkaline Phosphatase</trans:description>
+                  <trans:value>122</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GGT</trans:x_3>
+                  <trans:CPT>111112254</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Gamma Glutamyl Transferase</trans:description>
+                  <trans:value>134</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+            </HepaticFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>11111224</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Thyroid stimulating hormone (TSH)</trans:testName>
+         <trans:referredTo>Daniel Schmidt</trans:referredTo>
+         <trans:referredClinic>Herzzentrum</trans:referredClinic>
+         <trans:referredBy>David Winziski</trans:referredBy>
+         <trans:testSet>
+            <ThyroidFunction xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>11111224</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TSH</trans:x_3>
+                  <trans:CPT>111112241</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Thyroid Stimulating Hormone</trans:description>
+                  <trans:value>4</trans:value>
+                  <trans:units>mIU/l</trans:units>
+               </trans:testCode>
+            </ThyroidFunction>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>11111226</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Lipid panel</trans:testName>
+         <trans:referredTo>Daniel Schmidt</trans:referredTo>
+         <trans:referredClinic>Herzzentrum</trans:referredClinic>
+         <trans:referredBy>David Winziski</trans:referredBy>
+         <trans:testSet>
+            <LipidPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>11111226</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>LDL</trans:x_3>
+                  <trans:CPT>111112261</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Low-density lipoprotein</trans:description>
+                  <trans:value>4</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TRIG</trans:x_3>
+                  <trans:CPT>111112262</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Triglycerides</trans:description>
+                  <trans:value>2.9</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+            </LipidPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter>
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>David Winziski</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2009-06-18</trans:dateOfEncounter>
+      <trans:physician>David Winziski</trans:physician>
+      <trans:referral>false</trans:referral>
+      <trans:medicalBaseline>true</trans:medicalBaseline>
+      <trans:medicalTest>true</trans:medicalTest>
+      <trans:reportedSymptoms>dysphagia, nausea</trans:reportedSymptoms>
+      <trans:workingDiagnosis>gastroesophageal reflux disease</trans:workingDiagnosis>
+   </trans:Encounter>
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>David Winziski</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2009-07-21</trans:dateOfEncounter>
+      <trans:physician>David Winziski</trans:physician>
+      <trans:referral>false</trans:referral>
+      <trans:medicalBaseline>true</trans:medicalBaseline>
+      <trans:medicalTest>false</trans:medicalTest>
+      <trans:reportedSymptoms>memory loss</trans:reportedSymptoms>
+      <trans:workingDiagnosis>alzheimer's disease</trans:workingDiagnosis>
+      <trans:physicalObservations rdf:parseType="Resource"/>
+   </trans:Encounter>
+</rdf:RDF>

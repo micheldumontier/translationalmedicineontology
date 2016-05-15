@@ -1,0 +1,1261 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY pharmgkb_resource "http://bio2rdf.org/pharmgkb_resource:" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY pharmgkb_resource10 "http://bio2rdf.org/pharmgkb_resource:8" >
+    <!ENTITY pharmgkb_resource7 "http://bio2rdf.org/pharmgkb_resource:9" >
+    <!ENTITY pharmgkb_resource57 "http://bio2rdf.org/pharmgkb_resource:1" >
+    <!ENTITY pharmgkb_resource8 "http://bio2rdf.org/pharmgkb_resource:0" >
+    <!ENTITY pharmgkb_resource13 "http://bio2rdf.org/pharmgkb_resource:2" >
+    <!ENTITY pharmgkb_resource44 "http://bio2rdf.org/pharmgkb_resource:5" >
+    <!ENTITY pharmgkb_resource37 "http://bio2rdf.org/pharmgkb_resource:4" >
+    <!ENTITY pharmgkb_resource11 "http://bio2rdf.org/pharmgkb_resource:7" >
+    <!ENTITY pharmgkb_resource26 "http://bio2rdf.org/pharmgkb_resource:6" >
+    <!ENTITY pharmgkb_resource60 "http://bio2rdf.org/pharmgkb_resource:07" >
+    <!ENTITY pharmgkb_resource33 "http://bio2rdf.org/pharmgkb_resource:41" >
+    <!ENTITY pharmgkb_resource58 "http://bio2rdf.org/pharmgkb_resource:04" >
+    <!ENTITY pharmgkb_resource17 "http://bio2rdf.org/pharmgkb_resource:86" >
+    <!ENTITY pharmgkb_resource52 "http://bio2rdf.org/pharmgkb_resource:52" >
+    <!ENTITY pharmgkb_resource45 "http://bio2rdf.org/pharmgkb_resource:13" >
+    <!ENTITY pharmgkb_resource14 "http://bio2rdf.org/pharmgkb_resource:59" >
+    <!ENTITY pharmgkb_resource59 "http://bio2rdf.org/pharmgkb_resource:57" >
+    <!ENTITY pharmgkb_resource29 "http://bio2rdf.org/pharmgkb_resource:19" >
+    <!ENTITY pharmgkb_resource36 "http://bio2rdf.org/pharmgkb_resource:91" >
+    <!ENTITY pharmgkb_resource42 "http://bio2rdf.org/pharmgkb_resource:25" >
+    <!ENTITY pharmgkb_resource16 "http://bio2rdf.org/pharmgkb_resource:26" >
+    <!ENTITY pharmgkb_resource20 "http://bio2rdf.org/pharmgkb_resource:66" >
+    <!ENTITY pharmgkb_resource5 "http://bio2rdf.org/pharmgkb_resource:20" >
+    <!ENTITY pharmgkb_resource39 "http://bio2rdf.org/pharmgkb_resource:32" >
+    <!ENTITY pharmgkb_resource38 "http://bio2rdf.org/pharmgkb_resource:273" >
+    <!ENTITY pharmgkb_resource35 "http://bio2rdf.org/pharmgkb_resource:474" >
+    <!ENTITY pharmgkb_resource55 "http://bio2rdf.org/pharmgkb_resource:924" >
+    <!ENTITY pharmgkb_resource30 "http://bio2rdf.org/pharmgkb_resource:994" >
+    <!ENTITY pharmgkb_resource12 "http://bio2rdf.org/pharmgkb_resource:142" >
+    <!ENTITY pharmgkb_resource19 "http://bio2rdf.org/pharmgkb_resource:343" >
+    <!ENTITY pharmgkb_resource15 "http://bio2rdf.org/pharmgkb_resource:019" >
+    <!ENTITY pharmgkb_resource9 "http://bio2rdf.org/pharmgkb_resource:801" >
+    <!ENTITY pharmgkb_resource4 "http://bio2rdf.org/pharmgkb_resource:858" >
+    <!ENTITY pharmgkb_resource27 "http://bio2rdf.org/pharmgkb_resource:457" >
+    <!ENTITY pharmgkb_resource40 "http://bio2rdf.org/pharmgkb_resource:715" >
+    <!ENTITY pharmgkb_resource62 "http://bio2rdf.org/pharmgkb_resource:896" >
+    <!ENTITY pharmgkb_resource23 "http://bio2rdf.org/pharmgkb_resource:974" >
+    <!ENTITY pharmgkb_resource43 "http://bio2rdf.org/pharmgkb_resource:228" >
+    <!ENTITY pharmgkb_resource46 "http://bio2rdf.org/pharmgkb_resource:729" >
+    <!ENTITY pharmgkb_resource3 "http://bio2rdf.org/pharmgkb_resource:070" >
+    <!ENTITY pharmgkb_resource63 "http://bio2rdf.org/pharmgkb_resource:697" >
+    <!ENTITY pharmgkb_resource6 "http://bio2rdf.org/pharmgkb_resource:695" >
+    <!ENTITY pharmgkb_resource61 "http://bio2rdf.org/pharmgkb_resource:4483" >
+    <!ENTITY pharmgkb_resource22 "http://bio2rdf.org/pharmgkb_resource:9804" >
+    <!ENTITY pharmgkb_resource32 "http://bio2rdf.org/pharmgkb_resource:9803" >
+    <!ENTITY pharmgkb_resource64 "http://bio2rdf.org/pharmgkb_resource:1764" >
+    <!ENTITY pharmgkb_resource56 "http://bio2rdf.org/pharmgkb_resource:2747" >
+    <!ENTITY pharmgkb_resource18 "http://bio2rdf.org/pharmgkb_resource:1467" >
+    <!ENTITY pharmgkb_resource51 "http://bio2rdf.org/pharmgkb_resource:7946" >
+    <!ENTITY pharmgkb_resource41 "http://bio2rdf.org/pharmgkb_resource:1931" >
+    <!ENTITY pharmgkb_resource25 "http://bio2rdf.org/pharmgkb_resource:2563" >
+    <!ENTITY pharmgkb_resource21 "http://bio2rdf.org/pharmgkb_resource:7332" >
+    <!ENTITY pharmgkb_resource54 "http://bio2rdf.org/pharmgkb_resource:01992" >
+    <!ENTITY pharmgkb_resource31 "http://bio2rdf.org/pharmgkb_resource:81202" >
+    <!ENTITY pharmgkb_resource24 "http://bio2rdf.org/pharmgkb_resource:34556" >
+    <!ENTITY pharmgkb_resource47 "http://bio2rdf.org/pharmgkb_resource:01122" >
+    <!ENTITY pharmgkb_resource2 "http://bio2rdf.org/pharmgkb_resource:92294" >
+    <!ENTITY pharmgkb_resource49 "http://bio2rdf.org/pharmgkb_resource:275252" >
+    <!ENTITY pharmgkb_resource50 "http://bio2rdf.org/pharmgkb_resource:940274" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY transmed "http://www.w3.org/2001/sw/hcls/ns/transmed/" >
+    <!ENTITY pharmgkb_resource28 "http://bio2rdf.org/pharmgkb_resource:91340816" >
+    <!ENTITY pharmgkb_resource53 "http://bio2rdf.org/pharmgkb_resource:212990108" >
+    <!ENTITY pharmgkb_resource65 "http://bio2rdf.org/pharmgkb_resource:625612149" >
+    <!ENTITY pharmgkb_resource48 "http://bio2rdf.org/pharmgkb_resource:61857683860" >
+    <!ENTITY pharmgkb_resource34 "http://bio2rdf.org/pharmgkb_resource:91721604210524" >
+]>
+
+
+<rdf:RDF xmlns="http://semanticscience.org/ontology/tmo_to_pharmgkb_PA162355460.owl#"
+     xml:base="http://semanticscience.org/ontology/tmo_to_pharmgkb_PA162355460.owl"
+     xmlns:pharmgkb_resource10="&pharmgkb_resource;8"
+     xmlns:pharmgkb_resource11="&pharmgkb_resource;7"
+     xmlns:pharmgkb_resource60="&pharmgkb_resource;07"
+     xmlns:pharmgkb_resource12="&pharmgkb_resource;142"
+     xmlns:pharmgkb_resource13="&pharmgkb_resource;2"
+     xmlns:pharmgkb_resource14="&pharmgkb_resource;59"
+     xmlns:pharmgkb_resource62="&pharmgkb_resource;896"
+     xmlns:pharmgkb_resource61="&pharmgkb_resource;4483"
+     xmlns:pharmgkb_resource15="&pharmgkb_resource;019"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:pharmgkb_resource16="&pharmgkb_resource;26"
+     xmlns:pharmgkb_resource17="&pharmgkb_resource;86"
+     xmlns:pharmgkb_resource18="&pharmgkb_resource;1467"
+     xmlns:pharmgkb_resource19="&pharmgkb_resource;343"
+     xmlns:pharmgkb_resource20="&pharmgkb_resource;66"
+     xmlns:pharmgkb_resource22="&pharmgkb_resource;9804"
+     xmlns:pharmgkb_resource21="&pharmgkb_resource;7332"
+     xmlns:pharmgkb_resource24="&pharmgkb_resource;34556"
+     xmlns:pharmgkb_resource23="&pharmgkb_resource;974"
+     xmlns:pharmgkb_resource26="&pharmgkb_resource;6"
+     xmlns:pharmgkb_resource25="&pharmgkb_resource;2563"
+     xmlns:pharmgkb_resource28="&pharmgkb_resource;91340816"
+     xmlns:pharmgkb_resource63="&pharmgkb_resource;697"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:pharmgkb_resource27="&pharmgkb_resource;457"
+     xmlns:pharmgkb_resource64="&pharmgkb_resource;1764"
+     xmlns:pharmgkb_resource65="&pharmgkb_resource;625612149"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:pharmgkb_resource29="&pharmgkb_resource;19"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:pharmgkb_resource33="&pharmgkb_resource;41"
+     xmlns:pharmgkb_resource32="&pharmgkb_resource;9803"
+     xmlns:pharmgkb_resource31="&pharmgkb_resource;81202"
+     xmlns:pharmgkb_resource30="&pharmgkb_resource;994"
+     xmlns:pharmgkb_resource37="&pharmgkb_resource;4"
+     xmlns:pharmgkb_resource36="&pharmgkb_resource;91"
+     xmlns:pharmgkb_resource35="&pharmgkb_resource;474"
+     xmlns:pharmgkb_resource34="&pharmgkb_resource;91721604210524"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pharmgkb_resource39="&pharmgkb_resource;32"
+     xmlns:pharmgkb_resource38="&pharmgkb_resource;273"
+     xmlns:pharmgkb_resource2="&pharmgkb_resource;92294"
+     xmlns:pharmgkb_resource9="&pharmgkb_resource;801"
+     xmlns:pharmgkb_resource8="&pharmgkb_resource;0"
+     xmlns:pharmgkb_resource40="&pharmgkb_resource;715"
+     xmlns:pharmgkb_resource7="&pharmgkb_resource;9"
+     xmlns:pharmgkb_resource6="&pharmgkb_resource;695"
+     xmlns:pharmgkb_resource5="&pharmgkb_resource;20"
+     xmlns:pharmgkb_resource4="&pharmgkb_resource;858"
+     xmlns:pharmgkb_resource3="&pharmgkb_resource;070"
+     xmlns:pharmgkb_resource46="&pharmgkb_resource;729"
+     xmlns:pharmgkb_resource45="&pharmgkb_resource;13"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:pharmgkb_resource48="&pharmgkb_resource;61857683860"
+     xmlns:pharmgkb_resource47="&pharmgkb_resource;01122"
+     xmlns:pharmgkb_resource42="&pharmgkb_resource;25"
+     xmlns:pharmgkb_resource41="&pharmgkb_resource;1931"
+     xmlns:pharmgkb_resource44="&pharmgkb_resource;5"
+     xmlns:pharmgkb_resource43="&pharmgkb_resource;228"
+     xmlns:pharmgkb_resource49="&pharmgkb_resource;275252"
+     xmlns:pharmgkb_resource50="&pharmgkb_resource;940274"
+     xmlns:pharmgkb_resource51="&pharmgkb_resource;7946"
+     xmlns:pharmgkb_resource="http://bio2rdf.org/pharmgkb_resource:"
+     xmlns:pharmgkb_resource59="&pharmgkb_resource;57"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:pharmgkb_resource58="&pharmgkb_resource;04"
+     xmlns:pharmgkb_resource57="&pharmgkb_resource;1"
+     xmlns:pharmgkb_resource56="&pharmgkb_resource;2747"
+     xmlns:pharmgkb_resource55="&pharmgkb_resource;924"
+     xmlns:pharmgkb_resource54="&pharmgkb_resource;01992"
+     xmlns:pharmgkb_resource53="&pharmgkb_resource;212990108"
+     xmlns:pharmgkb_resource52="&pharmgkb_resource;52"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:transmed="http://www.w3.org/2001/sw/hcls/ns/transmed/">
+    <owl:Ontology rdf:about="http://translationalmedicineontology.googlecode.com/svn/trunk/data/pharmgkb_raw_data/tmo_to_pharmgkb_PA162355460.owl">
+        <rdfs:label>A mapping between PharmGKB data file PA162355460 and the Translational Medicine Ontology</rdfs:label>
+        <dc:creator>Michel Dumontier</dc:creator>
+        <owl:imports rdf:resource="http://translationalmedicineontology.googlecode.com/svn/trunk/data/pharmgkb_raw_data/PA162355460.owl"/>
+        <owl:imports rdf:resource="&transmed;tmo"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:070a986e24b1e845d55a87bcd5646ed7 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;070a986e24b1e845d55a87bcd5646ed7">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:0ec2294be731d946409349beba02c517 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;0ec2294be731d946409349beba02c517">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:1467a6493eb8b12183975d708d79c06c -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;1467a6493eb8b12183975d708d79c06c">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:1764ba0ce9fa90d45bc8478102eefd59 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;1764ba0ce9fa90d45bc8478102eefd59">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:2563ac7a5685e48b637ca112de5f6d4a -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;2563ac7a5685e48b637ca112de5f6d4a">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:25efdd09cb6b420550d03f48a7df75ed -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;25efdd09cb6b420550d03f48a7df75ed">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:275252f8f50a9896404ba898f80e2b4b -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;275252f8f50a9896404ba898f80e2b4b">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:32bd25bbccd47cbd341cbf389d559652 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;32bd25bbccd47cbd341cbf389d559652">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:4483e34cd29fcbd31b879463c6632050 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;4483e34cd29fcbd31b879463c6632050">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:474d3686611b52c68799e3c5bb303b5a -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;474d3686611b52c68799e3c5bb303b5a">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:57f0f87d648bc8ac325d657491be88a9 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;57f0f87d648bc8ac325d657491be88a9">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:59e87b2e40e8cb867cfd3db814cca0c4 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;59e87b2e40e8cb867cfd3db814cca0c4">
+        <rdfs:subPropertyOf rdf:resource="&OBO_REL;bearer_of"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:66d5808dd2a058c37ff8fd4085ac42b4 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;66d5808dd2a058c37ff8fd4085ac42b4">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:697ec1913b9afc03cdb94617e01db929 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;697ec1913b9afc03cdb94617e01db929">
+        <rdfs:subPropertyOf rdf:resource="&OBO_REL;bearer_of"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:6cdd64adf42bd96891526ec8aa8a7024 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;6cdd64adf42bd96891526ec8aa8a7024">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:715ed7c072b780a3e0f1814d40ac5a3f -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;715ed7c072b780a3e0f1814d40ac5a3f">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:8f95c55a58e743e11f92c86b32059948 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;8f95c55a58e743e11f92c86b32059948">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:92294fb00f60ebf3319f24919709c867 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;92294fb00f60ebf3319f24919709c867">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:9b31774d934377945444727b83b20fbb -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;9b31774d934377945444727b83b20fbb">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:9dadc4151aba3e326333bdc1d25f1064 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;9dadc4151aba3e326333bdc1d25f1064">
+        <rdfs:subPropertyOf rdf:resource="&OBO_REL;bearer_of"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:9f60917d66af4ea0f0e983795b936cb1 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;9f60917d66af4ea0f0e983795b936cb1">
+        <rdfs:subPropertyOf rdf:resource="&OBO_REL;bearer_of"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:a533979ae57bee0a46122474a2ace40c -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;a533979ae57bee0a46122474a2ace40c">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:aad897a20237176906c1cda38fe8897b -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;aad897a20237176906c1cda38fe8897b">
+        <rdfs:subPropertyOf rdf:resource="&OBO_REL;bearer_of"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:afc0725f7cecd09b23f317ce29ef1eb6 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;afc0725f7cecd09b23f317ce29ef1eb6">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:b21a8e9c9b4f6d348d5c94532cc86d13 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;b21a8e9c9b4f6d348d5c94532cc86d13">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:b8fbc2a074396dbf28472b6f3a9337d3 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;b8fbc2a074396dbf28472b6f3a9337d3">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:c0072a72ec5dd4d820a204c1936921a6 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;c0072a72ec5dd4d820a204c1936921a6">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:d058cb5401509f36d43620c57dac2698 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;d058cb5401509f36d43620c57dac2698">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:d106d106b05cb0cc2df8c970c6be3ad1 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;d106d106b05cb0cc2df8c970c6be3ad1">
+        <rdfs:subPropertyOf rdf:resource="&OBO_REL;bearer_of"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:d58d688688f85a0fa8c140a967d6d958 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;d58d688688f85a0fa8c140a967d6d958">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:d590108383d3e049d9690535ed7eae9a -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;d590108383d3e049d9690535ed7eae9a">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:d9752b4ca652e4025b6d0d3053e96573 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;d9752b4ca652e4025b6d0d3053e96573">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:e2cce3708fa78a66a116bfef7cb25303 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;e2cce3708fa78a66a116bfef7cb25303">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:f1fcb808730cc1da2dc40de8b84603ce -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;f1fcb808730cc1da2dc40de8b84603ce">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:f862500ae789b8bac54964e935aabb0d -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;f862500ae789b8bac54964e935aabb0d">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0196"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:f8e28780ffc669540397137bf37a7bb6 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;f8e28780ffc669540397137bf37a7bb6">
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:b90c471a7d4283327a924808ec7c0da2 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;b90c471a7d4283327a924808ec7c0da2">
+        <rdfs:subPropertyOf rdf:resource="&transmed;TMO_0185"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:01122a97dca927210827560cb7d76af8 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;01122a97dca927210827560cb7d76af8">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0124"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:01992fe97a2f80735f0583d23fd60b31 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;01992fe97a2f80735f0583d23fd60b31">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0114"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:019ec3132cdf8ee0f2e2a75cf5d3e459 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;019ec3132cdf8ee0f2e2a75cf5d3e459">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0086"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:04b6b06738ba5be88f1bb75fc0d8fc1b -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;04b6b06738ba5be88f1bb75fc0d8fc1b">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0198"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:07cf4f8f5d8b76282917320715dda2ad -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;07cf4f8f5d8b76282917320715dda2ad">
+        <rdfs:subClassOf rdf:resource="&pharmgkb_resource;019ec3132cdf8ee0f2e2a75cf5d3e459"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:0a60d96e167e91786bdc09f4d763122c -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;0a60d96e167e91786bdc09f4d763122c">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0198"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:0e4dd4723da15cf118f466b44e9c503d -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;0e4dd4723da15cf118f466b44e9c503d">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:0f1a20ea5f7f7b57af2ebcfee0206b48 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;0f1a20ea5f7f7b57af2ebcfee0206b48">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:0f522188580283353b0d45df0a24ec7f -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;0f522188580283353b0d45df0a24ec7f">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0019"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:13b08c5519441495ab5c1996ff9b3c68 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;13b08c5519441495ab5c1996ff9b3c68">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:142b178570c23cb1c19f1476068a2a06 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;142b178570c23cb1c19f1476068a2a06">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:1931ccba9085b17f00d48515ec14ac1d -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;1931ccba9085b17f00d48515ec14ac1d">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:19b92ff5216361a1645bdfeb830c44e1 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;19b92ff5216361a1645bdfeb830c44e1">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:1e450b3eb4b9b42d4848357990b62839 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;1e450b3eb4b9b42d4848357990b62839">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:20dbc25af86fb51159cf82d88813ecce -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;20dbc25af86fb51159cf82d88813ecce">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0137"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:20fbaa7c1bf32aa91ed46514737a0687 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;20fbaa7c1bf32aa91ed46514737a0687">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0181"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:212990108e51f1bdd5cd798a9a09cc9d -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;212990108e51f1bdd5cd798a9a09cc9d">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0114"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:228bd041176ef75e3b0e9d3359fbc3c1 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;228bd041176ef75e3b0e9d3359fbc3c1">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0047"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:26bd9dd71e96f58d07e47c3c403ee1c7 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;26bd9dd71e96f58d07e47c3c403ee1c7">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:273b9ae535de53399c86a9b83148a8ed -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;273b9ae535de53399c86a9b83148a8ed">
+        <rdfs:subClassOf rdf:resource="&pharmgkb_resource;019ec3132cdf8ee0f2e2a75cf5d3e459"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:2747b36512f5dbf7e35819863b54037f -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;2747b36512f5dbf7e35819863b54037f">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0136"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:2d552a27462e66e125b9400e1a9f00c1 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;2d552a27462e66e125b9400e1a9f00c1">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:343a5505690272fd48fa3c2d936ccefb -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;343a5505690272fd48fa3c2d936ccefb">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:34556e43cb3fd2f1356e4cfd446d5129 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;34556e43cb3fd2f1356e4cfd446d5129">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:41a42724ed3c320c176403886dc578a4 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;41a42724ed3c320c176403886dc578a4">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0084"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:457a780dbf25627a27fb5c5c1d0c519f -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;457a780dbf25627a27fb5c5c1d0c519f">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:4b07b058fc20ba913a6f3253e2668eae -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;4b07b058fc20ba913a6f3253e2668eae">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0136"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:4d9b3cb62a81bab4cd8730113d71b63e -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;4d9b3cb62a81bab4cd8730113d71b63e">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0190"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:52d261e9ebc332373e9c8a0abb6bd605 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;52d261e9ebc332373e9c8a0abb6bd605">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0047"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:59f2d039b69c4bb5bd1cb62ea238e064 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;59f2d039b69c4bb5bd1cb62ea238e064">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:5a3c24a87972014ffd862409871c3c40 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;5a3c24a87972014ffd862409871c3c40">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0190"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:5d80e1ae56accd9eb6db48b01f748199 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;5d80e1ae56accd9eb6db48b01f748199">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:5fd4353df296fa442e2030ad7f87492d -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;5fd4353df296fa442e2030ad7f87492d">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:61857683860d6e9d1211b774886e9009 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;61857683860d6e9d1211b774886e9009">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:625612149a8d43f8cbe5a04ee2538d3f -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;625612149a8d43f8cbe5a04ee2538d3f">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0019"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:66a081bfd547eb35e48a5361100a613c -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;66a081bfd547eb35e48a5361100a613c">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:695c198d44f4ee13c466f20461e7711c -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;695c198d44f4ee13c466f20461e7711c">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:729c2700270d55cfb67fe5e6eb287548 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;729c2700270d55cfb67fe5e6eb287548">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0114"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:7332c4afde1a9180c69e45748544e31b -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;7332c4afde1a9180c69e45748544e31b">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:7946fc37eced667125a3a1417c5e4be5 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;7946fc37eced667125a3a1417c5e4be5">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:7ac5aa6562f0e8d951f9c733fcc6db38 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;7ac5aa6562f0e8d951f9c733fcc6db38">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:7d48df0fee0b0bc0d3feccf4b9542b85 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;7d48df0fee0b0bc0d3feccf4b9542b85">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:7d8167affb308f685f5a55b73bd68581 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;7d8167affb308f685f5a55b73bd68581">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:7ecf11380dae7e896b5fd602b9ce9aee -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;7ecf11380dae7e896b5fd602b9ce9aee">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:801c3589138c794b2dc3e69076f0e6bc -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;801c3589138c794b2dc3e69076f0e6bc">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:81202b85d55af39a9c241032efa6cda2 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;81202b85d55af39a9c241032efa6cda2">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:858afb1ff0597d753aa85fabde66ebac -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;858afb1ff0597d753aa85fabde66ebac">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:86d7b21214769013fcc4954139497174 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;86d7b21214769013fcc4954139497174">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:896dc6c8be56f35e9fda826312fd3187 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;896dc6c8be56f35e9fda826312fd3187">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:91340816d3ecedb50e3cf666c93086b6 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;91340816d3ecedb50e3cf666c93086b6">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:91721604210524b7051d99c4c8478715 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;91721604210524b7051d99c4c8478715">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0180"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:91d630ab554863de697f54af6061526d -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;91d630ab554863de697f54af6061526d">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:924f66ee1669ca922f64332a971bdcf5 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;924f66ee1669ca922f64332a971bdcf5">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:940274b50c320b4090807e2fc9f4e686 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;940274b50c320b4090807e2fc9f4e686">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:974e6e29b1463e268b1e425fe94c146d -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;974e6e29b1463e268b1e425fe94c146d">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:9803f9a6806d6c421a07adaf5624877b -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;9803f9a6806d6c421a07adaf5624877b">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:9804b8fc1f1b5f1e63cc722fbfec18d7 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;9804b8fc1f1b5f1e63cc722fbfec18d7">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:994a6b5cd65c38a2c1fe68388dc4b65f -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;994a6b5cd65c38a2c1fe68388dc4b65f">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:9b15fa3dada0c406756c46bff35877c1 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;9b15fa3dada0c406756c46bff35877c1">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:9c78d9daaf2799e031b56a4353cceb54 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;9c78d9daaf2799e031b56a4353cceb54">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0089"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:9d8d2d5ab12b515182a505f54db7f538 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;9d8d2d5ab12b515182a505f54db7f538">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0085"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:9ebb00fc161d467394a15b97a297299d -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;9ebb00fc161d467394a15b97a297299d">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:a8e44fd6c243cc7cfb8ccf7658b2bca9 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;a8e44fd6c243cc7cfb8ccf7658b2bca9">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0083"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:aa5ebb1f7ab6c6138a953e55da203082 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;aa5ebb1f7ab6c6138a953e55da203082">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:ad9466b53d2c234751d1125d3a7f2ec1 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;ad9466b53d2c234751d1125d3a7f2ec1">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:b0ad6502af42486e5d6fffd4ab6b446e -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;b0ad6502af42486e5d6fffd4ab6b446e">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:b107640f7921d8211d0b9a2f14c75fc7 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;b107640f7921d8211d0b9a2f14c75fc7">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:b1335eabc605e6090ec3f8d9e5350a20 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;b1335eabc605e6090ec3f8d9e5350a20">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:b4c2fe17c73841a7c5bfa2ba0ba5546e -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;b4c2fe17c73841a7c5bfa2ba0ba5546e">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:b544099c58c8778e23107458e24992cf -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;b544099c58c8778e23107458e24992cf">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:b59ae3b17e6be51cec4a238fdbf64ae1 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;b59ae3b17e6be51cec4a238fdbf64ae1">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:ba25cf57f1a487ca6d30361a416ac7c1 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;ba25cf57f1a487ca6d30361a416ac7c1">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:baf7ecd530162bb079845e8ba0d66367 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;baf7ecd530162bb079845e8ba0d66367">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:bdc02854122cfda4f647cf300c24cc11 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;bdc02854122cfda4f647cf300c24cc11">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:bdcf6c1b07bd7995544920c1039e4d68 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;bdcf6c1b07bd7995544920c1039e4d68">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:bf58449ad489b6092dbeaf20c8f11508 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;bf58449ad489b6092dbeaf20c8f11508">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0075"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:c345a80b1f413882c11fff53c4f52e45 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;c345a80b1f413882c11fff53c4f52e45">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:c35b086c1fe461b08b9b87ced8ca67e7 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;c35b086c1fe461b08b9b87ced8ca67e7">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:c40028495dee2207e036ccc6628f6f86 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;c40028495dee2207e036ccc6628f6f86">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:c4740a056eeebf0e60d3eed913bcf833 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;c4740a056eeebf0e60d3eed913bcf833">
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:cc9b863599b633dd91210fc3893d39e7 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;cc9b863599b633dd91210fc3893d39e7">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:d5c28a22f61cdb406faf0d712318f3f2 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;d5c28a22f61cdb406faf0d712318f3f2">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:d6e5fe84387f0a275fc2171c5bbec02c -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;d6e5fe84387f0a275fc2171c5bbec02c">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:db9bf7cede37df69fde485090ceace6e -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;db9bf7cede37df69fde485090ceace6e">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0083"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:ddaa169006c6c9c10a43432e001a5cb3 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;ddaa169006c6c9c10a43432e001a5cb3">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:dfe1aee7ed92c6614ad9e98612f66597 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;dfe1aee7ed92c6614ad9e98612f66597">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:e327beb012e9cf4a5e8fdca6f05c080b -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;e327beb012e9cf4a5e8fdca6f05c080b">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:e44fd1ff0df8fe3e244fb874d2f96d19 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;e44fd1ff0df8fe3e244fb874d2f96d19">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:e59331bacc73bd2356dcebbd5b1b2cba -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;e59331bacc73bd2356dcebbd5b1b2cba">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0137"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:e7392f82339d0456b6b47e5c096133eb -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;e7392f82339d0456b6b47e5c096133eb">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:eafb8f2d1256dc7759c058227fd1298f -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;eafb8f2d1256dc7759c058227fd1298f">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:f45868949f435226fc7c175138991c27 -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;f45868949f435226fc7c175138991c27">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:f6fd50b8f8d8da1eb8663795b55c3d2c -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;f6fd50b8f8d8da1eb8663795b55c3d2c">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://bio2rdf.org/pharmgkb_resource:fadd669f4b1561f03667c12e61fa284e -->
+
+    <rdf:Description rdf:about="&pharmgkb_resource;fadd669f4b1561f03667c12e61fa284e">
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0004"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+

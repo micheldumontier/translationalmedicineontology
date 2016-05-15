@@ -1,0 +1,15 @@
+# Saved by TopBraid on Thu Mar 01 17:00:00 CET 2012
+# baseURI: http://genomic-cds.org/example/genes_rsids_and_haplotypes
+# imports: http://www.w3.org/2001/sw/hcls/ns/transmed/tmo
+
+@prefix :        <http://genomic-cds.org/example/genes_rsids_and_haplotypes#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tmo:     <http://www.w3.org/2001/sw/hcls/ns/transmed/tmo#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://genomic-cds.org/example/genes_rsids_and_haplotypes>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.w3.org/2001/sw/hcls/ns/transmed/tmo> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .

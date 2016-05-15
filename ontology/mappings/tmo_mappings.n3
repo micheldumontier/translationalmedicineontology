@@ -1,0 +1,53 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>
+@prefix linkedct:  <http://data.linkedct.org/resource/linkedct/>.
+@prefix drugbank:  <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/> .
+@prefix dailymed:  <http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/>.
+@prefix diseasome: <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/>.
+@prefix medicare:  <http://www4.wiwiss.fu-berlin.de/medicare/resource/medicare/>.
+@prefix sider:     <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/>.
+@prefix tmo: <http://www.w3.org/2001/sw/hcls/ns/transmed/> .
+@prefix translator: <tag:eric@w3.org:2009/tmo/translator#> .
+@prefix so:  <http://purl.org/obo/owl/SO#>.
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pharmgkb: <http://bio2rdf.org/pharmgkb:>.
+
+
+### DAILYMED
+dailymed:activeIngredient rdfs:Range tmo:TMO_0000 .
+dailymed:inactiveIngredient rdfs:Range tmo:TMO_0003 .
+
+
+###PCHR
+<tag:eric@w3.org:2009/pim/basicAddress> a obo:IAO_0000030 .
+foaf:Person rdfs:subClassOf <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> .
+# demographics as a 
+translator:Demographics rdfs:subClassOf tmo:TMO_0017.
+tmo:TMO_0001 owl:equivalentClass translator:Drug .
+tmo:TMO_0047 owl:equivalentClass translator:Condition .
+
+#translator:Procedure rdfs:subClassOf tmo:
+# allergy as a kind of environmental measure
+translator:Allergy rdfs:subClassOf tmo:TMO_0018 .
+# a planned process involving the introduction of foreign material into a subject
+translator:Immunization owl:equivalentClass obo:OBI_1110015 .
+# behavoir (sic) as 
+#translator:Behavoir
+#relation as a medical family history
+#translator:Relation
+# encounter as a diagnosis process
+translator:Encounter owl:equivalentClass tmo:TMO_0031.
+# practice to institution
+translator:Practice  rdfs:subClassOf tmo:TMO_0025.
+# the following are phenotypic measures
+translator:CompleteBloodCount rdfs:subClassOf tmo:TMO_0019.
+translator:LipidPanel rdfs:subClassOf tmo:TMO_0019.
+translator:HepaticFunctionPanel rdfs:subClassOf tmo:TMO_0019.
+translator:RenalFunctionPanel rdfs:subClassOf tmo:TMO_0019.
+translator:ThyroidFunction rdfs:subClassOf tmo:TMO_0019.
+translator:ComprehensiveMetabolicPanel rdfs:subClassOf tmo:TMO_0019.
+
+translator:physicalObservation rdfs:range tmo:TMO_0022 .
+                                                                     

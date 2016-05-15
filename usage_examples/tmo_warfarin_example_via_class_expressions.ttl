@@ -1,0 +1,170 @@
+# Saved by TopBraid on Tue Apr 24 01:35:34 CEST 2012
+# baseURI: http://example.org/temporary_namespace/resource/tmo_warfarin_example
+# imports: http://translationalmedicineontology.googlecode.com/svn/trunk/ontology/extensions/core_pharmacogenomics.ttl
+# imports: http://www.w3.org/2001/sw/hcls/ns/transmed/tmo
+
+@prefix :        <http://example.org/temporary_namespace/resource/tmo_warfarin_example#> .
+@prefix obo2:    <http://purl.obolibrary.org/obo/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro:      <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix tmo:     <http://www.w3.org/2001/sw/hcls/ns/transmed/tmo#> .
+@prefix transmed:  <http://www.w3.org/2001/sw/hcls/ns/transmed/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/temporary_namespace/resource/tmo_warfarin_example>
+      rdf:type owl:Ontology ;
+      owl:imports <http://translationalmedicineontology.googlecode.com/svn/trunk/ontology/extensions/core_pharmacogenomics.ttl> , transmed:tmo ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:CDS_message
+      rdf:type owl:AnnotationProperty ;
+      rdfs:label "CDS message "@en .
+
+:CYP2C9_1
+      rdf:type owl:Class ;
+      rdfs:label "CYP2C9*1"@en ;
+      rdfs:subClassOf transmed:TMO_0048 .
+
+:dbSNP_identifier
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "db SNP identifier "@en .
+
+:drug_description_process_matching_warfarin-coumadin-bristol-myers-squibb-fda-drug-label-1
+      rdf:type owl:Class ;
+      rdfs:label "drug prescription process matching warfarin-coumadin-bristol-myers-squibb-fda-drug-label-1"@en ;
+      rdfs:subClassOf :drug_prescription_process ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty ro:has_participant ;
+                            owl:someValuesFrom :human_male_warfarin
+                          ] [ rdf:type owl:Restriction ;
+                            owl:onProperty ro:has_participant ;
+                            owl:someValuesFrom :warfarin
+                          ])
+              ] .
+
+:drug_prescription_process
+      rdf:type owl:Class ;
+      rdfs:label "drug prescription process "@en ;
+      rdfs:subClassOf <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> .
+
+:human-1-test
+      rdf:type transmed:TMO_0124 ;
+      rdfs:label "human-1-test "@en ;
+      :is_prescribed
+              [ rdf:type :warfarin
+              ] ;
+      transmed:TMO_0196
+              [ rdf:type transmed:TMO_0087
+              ] .
+
+:human-2-test
+      rdf:type transmed:TMO_0124 ;
+      rdfs:label "human-2 "@en ;
+      :is_prescribed :warfarin .
+
+:human_male_warfarin
+      rdf:type owl:Class ;
+      rdfs:comment "This is a male human receiving warfarin."^^xsd:string ;
+      rdfs:label "human-1"@en ;
+      rdfs:subClassOf transmed:TMO_0124 ;
+      :CDS_message "This is a male human receiving warfarin. "^^xsd:string ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty transmed:TMO_0196 ;
+                            owl:someValuesFrom transmed:TMO_0087
+                          ] [ rdf:type owl:Restriction ;
+                            owl:onProperty :is_prescribed ;
+                            owl:someValuesFrom :warfarin
+                          ])
+              ] .
+
+:is_prescribed
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain transmed:TMO_0124 ;
+      rdfs:label "is prescribed"@en ;
+      owl:propertyChainAxiom
+              (:is_prescribed ro:has_part) .
+
+:medical_recommendation
+      rdf:type owl:Class ;
+      rdfs:label "medical recommendation "@en ;
+      rdfs:subClassOf transmed:TMO_0135 .
+
+:nucleotide_sequence
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain transmed:TMO_0215 ;
+      rdfs:label "nucleotide sequence "@en .
+
+:rs9923231
+      rdf:type owl:Class ;
+      rdfs:label "rs9923231 "@en ;
+      rdfs:subClassOf transmed:TMO_0038 ;
+      owl:equivalentClass
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "rs9923231"^^xsd:string ;
+                owl:onProperty :dbSNP_identifier
+              ] .
+
+:rs9923231_A_
+      rdf:type owl:Class ;
+      rdfs:label "rs9923231(A)"@en ;
+      rdfs:subClassOf :rs9923231 ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf (:rs9923231 [ rdf:type owl:Restriction ;
+                            owl:hasValue "A"^^xsd:string ;
+                            owl:onProperty :nucleotide_sequence
+                          ])
+              ] .
+
+:rs9923231_G_
+      rdf:type owl:Class ;
+      rdfs:label "rs9923231(G)"@en ;
+      rdfs:subClassOf :rs9923231 ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf (:rs9923231 [ rdf:type owl:Restriction ;
+                            owl:hasValue "G"^^xsd:string ;
+                            owl:onProperty :nucleotide_sequence
+                          ])
+              ] .
+
+:warfarin
+      rdf:type owl:Class ;
+      rdfs:label "warfarin"@en ;
+      rdfs:subClassOf transmed:TMO_0000 .
+
+:warfarin-coumadin-bristol-myers-squibb-fda-drug-label-1
+      rdf:type owl:Class ;
+      rdfs:label "warfarin-coumadin-bristol-myers-squibb-fda-drug-label-11"@en ;
+      rdfs:subClassOf transmed:TMO_0124 ;
+      :CDS_message "3-4 mg warfarin per day should be considered as a starting dose range for a patient with this genotype according to the Warfarin drug label (Bristol-Myers Squibb)."@en ;
+      obo2:IAO_0000114 "needs more work"^^xsd:string ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty :is_prescribed ;
+                            owl:someValuesFrom :warfarin
+                          ] [ rdf:type owl:Restriction ;
+                            owl:onProperty ro:has_part ;
+                            owl:someValuesFrom <http://safety-code.org/ontology/safety-code.ttl#genotype_rs1799853_variant_T_T>
+                          ] [ rdf:type owl:Restriction ;
+                            owl:onProperty ro:has_part ;
+                            owl:someValuesFrom <http://safety-code.org/ontology/safety-code.ttl#item_rs9923231>
+                          ])
+              ] .
+
+:warfarin-coumadin-bristol-myers-squibb-fda-drug-label-13
+      rdf:type owl:Class ;
+      rdfs:label "warfarin-coumadin-bristol-myers-squibb-fda-drug-label 13 "@en ;
+      rdfs:subClassOf transmed:TMO_0124 .
+
+ro:has_component
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has component "@en ;
+      rdfs:subPropertyOf ro:has_proper_part .

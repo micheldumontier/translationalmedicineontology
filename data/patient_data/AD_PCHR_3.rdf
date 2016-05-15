@@ -1,0 +1,2305 @@
+<!-- -*- XML -*- --><?xml-stylesheet type="text/xsl" href="Patrdf2html.xsl"?>
+<!-- $Id: AD_PCHR_3-2-1.rdf,v 1.5 2009/11/24 23:21:15 eric Exp $ -->
+<rdf:RDF xmlns:indivo="http://indivo.org/vocab/xml/documents#"
+		 xml:base="http://tag:eric@w3.org:2009/pchr/3#"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trans="tag:eric@w3.org:2009/tmo/translator#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:pim="tag:eric@w3.org:2009/pim/basic"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+   <trans:Practice>
+      <trans:practiceName>Family Health</trans:practiceName>
+      <pim:addr>
+         <pim:Address>
+            <vcard:Street>20 Water St.</vcard:Street>
+            <vcard:Pcode>53326</vcard:Pcode>
+            <vcard:Locality>New Hope</vcard:Locality>
+            <vcard:Region>Massachusetts</vcard:Region>
+            <vcard:Country>US</vcard:Country>
+            <pim:timeZone>-5GMT</pim:timeZone>
+            <foaf:phone>17891011782</foaf:phone>
+         </pim:Address>
+      </pim:addr>
+      <trans:primaryCarePhysician>
+         <foaf:Person>
+            <foaf:name>Henry No</foaf:name>
+            <foaf:givenName>Henry</foaf:givenName>
+            <foaf:familyName>No</foaf:familyName>
+            <trans:license>111110</trans:license>
+            <foaf:gender>male</foaf:gender>
+         </foaf:Person>
+      </trans:primaryCarePhysician>
+   </trans:Practice>
+
+   <rdf:Description rdf:about="#me">
+      <trans:demographics rdf:resource="#demog"/>
+   </rdf:Description>
+   <trans:Demographics rdf:about="#demog">
+      <indivo:dateOfBirth>1946-12-07</indivo:dateOfBirth>
+      <indivo:dateOfDeath>XXXX-XX-XX</indivo:dateOfDeath>
+      <indivo:gender>Male</indivo:gender>
+      <indivo:ethnicity>Caucasian</indivo:ethnicity>
+      <indivo:language>EN</indivo:language>
+      <indivo:maritalStatus>Married</indivo:maritalStatus>
+      <indivo:employmentStatus>Fulltime</indivo:employmentStatus>
+      <indivo:employmentIndustry>Pharmaceutical</indivo:employmentIndustry>
+      <indivo:occupation>Scientist</indivo:occupation>
+      <indivo:religion>Protestant</indivo:religion>
+      <indivo:income>130,000 USD</indivo:income>
+      <indivo:highestEducation>PhD</indivo:highestEducation>
+      <indivo:organDonor>true</indivo:organDonor>
+   </trans:Demographics>
+
+   <foaf:Person rdf:about="#me">
+      <foaf:name>Benny Smith</foaf:name>
+      <foaf:givenName>Benny</foaf:givenName>
+      <foaf:familyName>Smith</foaf:familyName>
+      <!--work mbox--><foaf:mbox>
+        benny.smith@pharma.com
+    </foaf:mbox>
+      <foaf:address>
+         <pim:Address>
+            <vcard:Street>5 Jogging St.</vcard:Street>
+            <vcard:Pcode>24652</vcard:Pcode>
+            <vcard:Locality>Eels Village</vcard:Locality>
+            <vcard:Region>Massachusetts</vcard:Region>
+            <vcard:Country>US</vcard:Country>
+            <pim:timeZone>-5GMT</pim:timeZone>
+         </pim:Address>
+      </foaf:address>
+      <pim:location rdf:parseType="Resource">
+         <geo:lat>40N</geo:lat>
+         <geo:long>68W</geo:long>
+      </pim:location>
+      <foaf:phone>123123</foaf:phone>
+      <foaf:phone>1789772413</foaf:phone>
+      <foaf:accountName>BennyS</foaf:accountName>
+   </foaf:Person>
+
+   
+     <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC> 63856-223-40  </trans:NDC>
+      <trans:genericName>Codeine</trans:genericName>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>30-60</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>MG</trans:unit>
+      <trans:packSize>32</trans:packSize>
+      <trans:packType>BOT</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>TABLET</trans:dosageName>
+      <trans:frequency>q.d.</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>3</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>ongoing</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>Henry No</trans:prescribedBy>
+      <indivo:prescribedOn>2005-07-09</indivo:prescribedOn>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+     <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC> 0025-1525-31 </trans:NDC>
+      <trans:genericName>Celecoxib</trans:genericName>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>200</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>MG</trans:unit>
+      <trans:packSize>100</trans:packSize>
+      <trans:packType>BOT</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>capsule</trans:dosageName>
+      <trans:frequency>bid</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>3</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>ongoing</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>Henry No</trans:prescribedBy>
+      <indivo:prescribedOn>2005-07-09</indivo:prescribedOn>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+     <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC>  67618-106-60 </trans:NDC>
+      <trans:genericName>Docusate Sodium</trans:genericName>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>60</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>MG</trans:unit>
+      <trans:packSize>100</trans:packSize>
+      <trans:packType>BOT</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>capsule</trans:dosageName>
+      <trans:frequency>bid</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>3</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>ongoing</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>Henry No</trans:prescribedBy>
+      <indivo:prescribedOn>2006-11-11</indivo:prescribedOn>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+     <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC> 0054-8486-16 </trans:NDC>
+      <trans:genericName>Lactulose</trans:genericName>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>15</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>mls</trans:unit>
+      <trans:packSize>40</trans:packSize>
+      <trans:packType>Patient Cup</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>liquid</trans:dosageName>
+      <trans:frequency>bid</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>3</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>ongoing</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>Henry No</trans:prescribedBy>
+      <indivo:prescribedOn>2007-11-09</indivo:prescribedOn>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+     <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC> 0179-0016-70 30  </trans:NDC>
+      <trans:genericName>Omeprazole</trans:genericName>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>40</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>MG</trans:unit>
+      <trans:packSize>30</trans:packSize>
+      <trans:packType>Box</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>capsule</trans:dosageName>
+      <trans:frequency>q.d.</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>3</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>ongoing</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>Henry No</trans:prescribedBy>
+      <indivo:prescribedOn>2007-11-09</indivo:prescribedOn>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+     <trans:Drug>
+      <trans:prescribedTo rdf:resource="#me"/>
+      <trans:ontology>National Drug Code Directory</trans:ontology>
+      <trans:NDC> 0000</trans:NDC>
+      <trans:genericName>Donepezil</trans:genericName>
+      <!-- ++ indivo:Prescription/strength/value --><trans:strength>10</trans:strength>
+      <!-- ++ indivo:Prescription/strength/value --><trans:unit>MG</trans:unit>
+      <trans:packSize>32</trans:packSize>
+      <trans:packType>BOT</trans:packType>
+      <trans:routeName>ORAL</trans:routeName>
+      <trans:dosageName>TABLET</trans:dosageName>
+      <trans:frequency>q.d.</trans:frequency>
+      <!-- ++ indivo:Prescription/refillInfo --><trans:refill>3</trans:refill>
+      <!-- ++ indivo:Prescription/duration --><trans:daysToTake>ongoing</trans:daysToTake>
+      <!-- ++ indivo:Prescription/prescribedBy/name --><trans:prescribedBy>Henry No</trans:prescribedBy>
+      <indivo:prescribedOn>2009-11-09</indivo:prescribedOn>
+      <trans:physicianNotes>...</trans:physicianNotes>
+   </trans:Drug>
+  
+
+
+  
+       <rdf:Description rdf:about="#me">
+      <trans:hasCondition>
+         <trans:Condition><!-- ++ close to indivo:name --><trans:diagnosedWith>Osteoarthrosis generalized involving hand</trans:diagnosedWith>
+            <trans:ICD9>715.04</trans:ICD9>
+            <trans:dateDiagnosed>2001-01-03</trans:dateDiagnosed>
+            <indivo:diagnosedBy>Henry No</indivo:diagnosedBy>
+            <trans:physicianNotes>...</trans:physicianNotes>
+         </trans:Condition>
+      </trans:hasCondition>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasCondition>
+         <trans:Condition><!-- ++ close to indivo:name --><trans:diagnosedWith>Alzheimer's Disease</trans:diagnosedWith>
+            <trans:ICD9>331</trans:ICD9>
+            <trans:dateDiagnosed>2005-11-03</trans:dateDiagnosed>
+            <indivo:diagnosedBy>Henry No</indivo:diagnosedBy>
+            <trans:physicianNotes>...</trans:physicianNotes>
+         </trans:Condition>
+      </trans:hasCondition>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasCondition>
+         <trans:Condition><!-- ++ close to indivo:name --><trans:diagnosedWith>Dyspepsia and other specified disorders of stomach</trans:diagnosedWith>
+            <trans:ICD9>536.8</trans:ICD9>
+            <trans:dateDiagnosed>2007-09-23</trans:dateDiagnosed>
+            <indivo:diagnosedBy>Henry No</indivo:diagnosedBy>
+            <trans:physicianNotes>...</trans:physicianNotes>
+         </trans:Condition>
+      </trans:hasCondition>
+   </rdf:Description>
+  
+
+
+  
+      <trans:Procedure>
+      <trans:performedOn rdf:resource="#me"/>
+      <!-- ++ close to indivo:Procedure/name --><trans:procedureName>appendectomy via incision</trans:procedureName>
+      <trans:ICD9>47.09</trans:ICD9>
+      <indivo:datePerformed>1998-07-15</indivo:datePerformed>
+      <trans:referredBy>Henry No</trans:referredBy>
+      <trans:referredInstitution>Redding Hospital</trans:referredInstitution>
+   </trans:Procedure>
+            
+
+
+  
+       <rdf:Description rdf:about="#me">
+      <trans:hasAllergy>
+         <trans:Allergy>
+            <trans:allergyType>drugs</trans:allergyType>
+            <trans:allergyList>none</trans:allergyList>
+         </trans:Allergy>
+      </trans:hasAllergy>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasAllergy>
+         <trans:Allergy>
+            <trans:allergyType>food</trans:allergyType>
+            <trans:allergyList>none</trans:allergyList>
+         </trans:Allergy>
+      </trans:hasAllergy>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:hasAllergy>
+         <trans:Allergy>
+            <trans:allergyType>environment</trans:allergyType>
+            <trans:allergyList>none</trans:allergyList>
+         </trans:Allergy>
+      </trans:hasAllergy>
+   </rdf:Description>
+  
+
+
+  
+      <rdf:Description rdf:about="#me">
+      <trans:immunization>
+         <trans:Immunization>
+            <trans:diseaseName>measles</trans:diseaseName>
+            <indivo:dateAdministered>1952</indivo:dateAdministered>
+            <trans:method>oral</trans:method>
+            <trans:compound>single</trans:compound>
+            <trans:stage>1</trans:stage>
+            <trans:administeredBy>Henry No</trans:administeredBy>
+         </trans:Immunization>
+      </trans:immunization>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:immunization>
+         <trans:Immunization>
+            <trans:diseaseName>mumps</trans:diseaseName>
+            <indivo:dateAdministered>1952</indivo:dateAdministered>
+            <trans:method>oral</trans:method>
+            <trans:compound>single</trans:compound>
+            <trans:stage>1</trans:stage>
+            <trans:administeredBy>Henry No</trans:administeredBy>
+         </trans:Immunization>
+      </trans:immunization>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:immunization>
+         <trans:Immunization>
+            <trans:diseaseName>rubella</trans:diseaseName>
+            <indivo:dateAdministered>1961</indivo:dateAdministered>
+            <trans:method>intramuscular</trans:method>
+            <trans:compound>single</trans:compound>
+            <trans:stage>1</trans:stage>
+            <trans:administeredBy>Henry No</trans:administeredBy>
+         </trans:Immunization>
+      </trans:immunization>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:immunization>
+         <trans:Immunization>
+            <trans:diseaseName>tetanus</trans:diseaseName>
+            <indivo:dateAdministered>2005</indivo:dateAdministered>
+            <trans:method>intramuscular</trans:method>
+            <trans:compound>single</trans:compound>
+            <trans:stage>1</trans:stage>
+            <trans:administeredBy>Henry No</trans:administeredBy>
+         </trans:Immunization>
+      </trans:immunization>
+   </rdf:Description> 
+   
+
+  
+  
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>alcoholConsumption</trans:behavoirName>
+            <trans:frequency>5</trans:frequency>
+            <trans:units>week</trans:units>
+            <trans:quantity>3</trans:quantity>
+            <trans:date>1998-07-15</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>exercise</trans:behavoirName>
+            <trans:frequency>2</trans:frequency>
+            <trans:units>week</trans:units>
+            <trans:averageDuration>25</trans:averageDuration>
+            <trans:date>1998-07-15</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>smoking</trans:behavoirName>
+            <trans:packYears>36</trans:packYears>
+            <trans:history>1962</trans:history>
+            <trans:date>1998-07-15</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+       <rdf:Description rdf:about="#me">
+      <trans:behavoir>
+         <trans:Behavoir>
+            <trans:behavoirName>diet</trans:behavoirName>
+            <trans:fruitVegetablesRating>1</trans:fruitVegetablesRating>
+            <trans:wholeGrainsRating>0</trans:wholeGrainsRating>
+            <trans:dairyRating>7</trans:dairyRating>
+            <trans:proteinRating>8</trans:proteinRating>
+            <trans:fatsRating>5</trans:fatsRating>
+            <trans:junkFoodRating>1</trans:junkFoodRating>
+            <trans:date>1998-07-15</trans:date>
+         </trans:Behavoir>
+      </trans:behavoir>
+   </rdf:Description>
+  
+
+
+  
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>maternalGrandmother</trans:relation>
+            <trans:fname>Elsa</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>60</trans:ageAtDeath>
+            <trans:cancer>no</trans:cancer>
+            <trans:causeOfDeath>drowning</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>maternalGrandfather</trans:relation>
+            <trans:fname>Curt</trans:fname>
+            <trans:sex>Male</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>83</trans:ageAtDeath>
+            <trans:cancer>no</trans:cancer>
+            <trans:causeOfDeath>Old Age</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>paternalGrandmother</trans:relation>
+            <trans:fname>Greta</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>69</trans:ageAtDeath>
+            <trans:cancer>yes</trans:cancer>
+            <trans:cancerType>Lung</trans:cancerType>
+            <trans:misParse>&lt;cancerTypeLunglAge&gt;62&lt;/cancerTypeLunglAge&gt;</trans:misParse>
+            <trans:causeOfDeath>Cancer</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>paternalGrandfather</trans:relation>
+            <trans:fname>Lean</trans:fname>
+            <trans:sex>Male</trans:sex>
+            <trans:alive>no</trans:alive>
+            <trans:ageAtDeath>65</trans:ageAtDeath>
+            <trans:cancer>yes</trans:cancer>
+            <trans:cancerType>Lung</trans:cancerType>
+            <trans:misParse>&lt;cancerTypeLunglAge&gt;62&lt;/cancerTypeLunglAge&gt;</trans:misParse>
+            <trans:causeOfDeath>COPD</trans:causeOfDeath>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>mother</trans:relation>
+            <trans:fname>Ida</trans:fname>
+            <trans:sex>Female</trans:sex>
+            <trans:alive>yes</trans:alive>
+            <trans:cancer>no</trans:cancer>
+            <trans:misParse>&lt;medicalConditions x_1="Asthma"&gt;yes&lt;/medicalConditions&gt;</trans:misParse>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+      <rdf:Description rdf:about="#me">
+      <trans:relation>
+         <trans:Relation>
+            <trans:relation>father</trans:relation>
+            <trans:fname>Dieter</trans:fname>
+            <trans:sex>Male</trans:sex>
+            <trans:alive>yes</trans:alive>
+            <trans:cancer>yes</trans:cancer>
+            <trans:cancerType>Lung</trans:cancerType>
+            <trans:misParse>&lt;cancerTypeLunglAge&gt;62&lt;/cancerTypeLunglAge&gt;</trans:misParse>
+         </trans:Relation>
+      </trans:relation>
+   </rdf:Description>
+
+
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>Henry No</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>1996-09-12</trans:dateOfEncounter>
+      <trans:physician>Henry No</trans:physician>
+      <trans:medicalBaseline>true</trans:medicalBaseline>
+      <trans:medicalTest>Annual Medical</trans:medicalTest>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:workingDiagnosis>false</trans:workingDiagnosis>
+      <trans:referral>false</trans:referral>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:physicalObservations rdf:parseType="Resource">
+         <trans:bodyFat_x5 rdf:parseType="Resource">
+            <trans:x6_bodyFat rdf:datatype="tag:eric@w3.org:2009/tmo/translator#percent">27</trans:x6_bodyFat>
+            <trans:weight rdf:datatype="tag:eric@w3.org:2009/tmo/translator#pounds">180</trans:weight>
+            <trans:height rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">73</trans:height>
+            <trans:BMI rdf:datatype="tag:eric@w3.org:2009/tmo/translator#kg/m^2">24</trans:BMI>
+         </trans:bodyFat_x5>
+         <trans:waistToHips rdf:parseType="Resource">
+            <trans:waist rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">40</trans:waist>
+            <trans:hips rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">42</trans:hips>
+            <trans:waistToHips>0.8</trans:waistToHips>
+         </trans:waistToHips>
+         <trans:bloodPressure rdf:parseType="Resource">
+            <trans:systolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">149</trans:systolic>
+            <trans:diastolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">91</trans:diastolic>
+         </trans:bloodPressure>
+         <trans:restingHeartRate rdf:parseType="Resource">
+            <trans:restingHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">72</trans:restingHeartRate>
+         </trans:restingHeartRate>
+         <trans:stamina rdf:parseType="Resource">
+            <trans:finalHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">140</trans:finalHeartRate>
+            <trans:predictedVO2Max rdf:datatype="tag:eric@w3.org:2009/tmo/translator#ml/kg/min">49.2</trans:predictedVO2Max>
+         </trans:stamina>
+         <trans:lungFunction rdf:parseType="Resource">
+            <trans:PEFR rdf:datatype="tag:eric@w3.org:2009/tmo/translator#L/min">420</trans:PEFR>
+         </trans:lungFunction>
+      </trans:physicalObservations>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>85025</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC and platelet count) and automated differential WBC count</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <CompleteBloodCount xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>85025</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HGB</trans:x_3>
+                  <trans:CPT>85018</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hemogloblin</trans:description>
+                  <trans:value>14.0</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>RBC</trans:x_3>
+                  <trans:CPT>85041</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Red Blood Cell Count</trans:description>
+                  <trans:value>6.00</trans:value>
+                  <trans:units>mil/mcl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HCT</trans:x_3>
+                  <trans:CPT>85014</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hematocrit</trans:description>
+                  <trans:value>42.0</trans:value>
+                  <trans:units>percent</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCV</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Cell Volume</trans:description>
+                  <trans:value>89.0</trans:value>
+                  <trans:units>fl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCH</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin</trans:description>
+                  <trans:value>31.0</trans:value>
+                  <trans:units>pg/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCHC</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin Concentration</trans:description>
+                  <trans:value>31.8</trans:value>
+                  <trans:units>Hb/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>PLTC</trans:x_3>
+                  <trans:CPT>85049</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Platelet Count</trans:description>
+                  <trans:value>291</trans:value>
+                  <trans:units>/mm³</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>WBC</trans:x_3>
+                  <trans:CPT>85048</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>White Blood Cell Count</trans:description>
+                  <trans:value>5000</trans:value>
+                  <trans:units>/mm³</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ANEUT</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Neutrophil Count</trans:description>
+                  <trans:value>67.2</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALYMS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Lymphocyte Count</trans:description>
+                  <trans:value>23.0</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AMON</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Monocyte Count</trans:description>
+                  <trans:value>4.2</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AEOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Eosinophil Count</trans:description>
+                  <trans:value>4.1</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ABOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Basophil Count</trans:description>
+                  <trans:value>0.11</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+            </CompleteBloodCount>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80061</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Lipid panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <LipidPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80061</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>LDL</trans:x_3>
+                  <trans:CPT>83721</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> LDL</trans:description>
+                  <trans:value>101</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TRIG</trans:x_3>
+                  <trans:CPT>84478</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> Triglycerides</trans:description>
+                  <trans:value>140</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HDL</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description> HDL</trans:description>
+                  <trans:value>59</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </LipidPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80076</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Hepatic function panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <HepaticFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80076</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TP</trans:x_3>
+                  <trans:CPT>84155</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Total Protein</trans:description>
+                  <trans:value>6.5</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AST</trans:x_3>
+                  <trans:CPT>84450</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum glutamic-oxaloacetic transaminase</trans:description>
+                  <trans:value>32</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TBIL</trans:x_3>
+                  <trans:CPT>82247</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Bilirubin, Total</trans:description>
+                  <trans:value>1.1</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALP</trans:x_3>
+                  <trans:CPT>84075</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Alkaline Phosphatase</trans:description>
+                  <trans:value>120</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GGT</trans:x_3>
+                  <trans:CPT>82977</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Gamma Glutamyl Transferase</trans:description>
+                  <trans:value>100</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CRP</trans:x_3>
+                  <trans:CPT>86140</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum C-Reactive Protein</trans:description>
+                  <trans:value>0.4</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </HepaticFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80069</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Renal function panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <RenalFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80069</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>NA</trans:x_3>
+                  <trans:CPT>84295</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Sodium</trans:description>
+                  <trans:value>130</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>K</trans:x_3>
+                  <trans:CPT>84132</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Potassium</trans:description>
+                  <trans:value>3.9</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CREA</trans:x_3>
+                  <trans:CPT>82565</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Creatinine</trans:description>
+                  <trans:value>1.01</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALB</trans:x_3>
+                  <trans:CPT>82040</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Albumin</trans:description>
+                  <trans:value>4.5</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GLU</trans:x_3>
+                  <trans:CPT>82945</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Glucose, serum fasting</trans:description>
+                  <trans:value>110</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CA</trans:x_3>
+                  <trans:CPT>82310</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Calcium</trans:description>
+                  <trans:value>1.01</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CNA</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Corrected Calcium Level</trans:description>
+                  <trans:value>2.09</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>BUN</trans:x_3>
+                  <trans:CPT>84520</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Blood Urea Nitrogen</trans:description>
+                  <trans:value>5</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>URIC</trans:x_3>
+                  <trans:CPT>84550</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Uric Acid</trans:description>
+                  <trans:value>3.6</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </RenalFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>84443</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Thyroid stimulating hormone (TSH)</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <ThyroidFunction xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>84443</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TSH</trans:x_3>
+                  <trans:CPT>84443</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Thyroid Stimulating Hormone</trans:description>
+                  <trans:value>4.0</trans:value>
+                  <trans:units>mcU/ml</trans:units>
+               </trans:testCode>
+            </ThyroidFunction>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter>
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>Henry No</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2002-07-15</trans:dateOfEncounter>
+      <trans:physician>Henry No</trans:physician>
+      <trans:medicalBaseline>true</trans:medicalBaseline>
+      <trans:medicalTest>Annual Medical</trans:medicalTest>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:workingDiagnosis>false</trans:workingDiagnosis>
+      <trans:referral>false</trans:referral>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:physicalObservations rdf:parseType="Resource">
+         <trans:bodyFat_x5 rdf:parseType="Resource">
+            <trans:x6_bodyFat rdf:datatype="tag:eric@w3.org:2009/tmo/translator#percent">27</trans:x6_bodyFat>
+            <trans:weight rdf:datatype="tag:eric@w3.org:2009/tmo/translator#pounds">180</trans:weight>
+            <trans:height rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">73</trans:height>
+            <trans:BMI rdf:datatype="tag:eric@w3.org:2009/tmo/translator#kg/m^2">24</trans:BMI>
+         </trans:bodyFat_x5>
+         <trans:waistToHips rdf:parseType="Resource">
+            <trans:waist rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">40</trans:waist>
+            <trans:hips rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">42</trans:hips>
+            <trans:waistToHips>0.8</trans:waistToHips>
+         </trans:waistToHips>
+         <trans:bloodPressure rdf:parseType="Resource">
+            <trans:systolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">149</trans:systolic>
+            <trans:diastolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">91</trans:diastolic>
+         </trans:bloodPressure>
+         <trans:restingHeartRate rdf:parseType="Resource">
+            <trans:restingHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">72</trans:restingHeartRate>
+         </trans:restingHeartRate>
+         <trans:stamina rdf:parseType="Resource">
+            <trans:finalHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">140</trans:finalHeartRate>
+            <trans:predictedVO2Max rdf:datatype="tag:eric@w3.org:2009/tmo/translator#ml/kg/min">49.2</trans:predictedVO2Max>
+         </trans:stamina>
+         <trans:lungFunction rdf:parseType="Resource">
+            <trans:PEFR rdf:datatype="tag:eric@w3.org:2009/tmo/translator#L/min">420</trans:PEFR>
+         </trans:lungFunction>
+      </trans:physicalObservations>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>85025</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC and platelet count) and automated differential WBC count</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <CompleteBloodCount xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>85025</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HGB</trans:x_3>
+                  <trans:CPT>85018</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hemogloblin</trans:description>
+                  <trans:value>14.0</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>RBC</trans:x_3>
+                  <trans:CPT>85041</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Red Blood Cell Count</trans:description>
+                  <trans:value>6.00</trans:value>
+                  <trans:units>mil/mcl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HCT</trans:x_3>
+                  <trans:CPT>85014</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hematocrit</trans:description>
+                  <trans:value>42.0</trans:value>
+                  <trans:units>percent</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCV</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Cell Volume</trans:description>
+                  <trans:value>89.0</trans:value>
+                  <trans:units>fl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCH</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin</trans:description>
+                  <trans:value>31.0</trans:value>
+                  <trans:units>pg/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCHC</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin Concentration</trans:description>
+                  <trans:value>31.8</trans:value>
+                  <trans:units>Hb/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>PLTC</trans:x_3>
+                  <trans:CPT>85049</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Platelet Count</trans:description>
+                  <trans:value>291</trans:value>
+                  <trans:units>/mm³</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>WBC</trans:x_3>
+                  <trans:CPT>85048</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>White Blood Cell Count</trans:description>
+                  <trans:value>5000</trans:value>
+                  <trans:units>/mm³</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ANEUT</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Neutrophil Count</trans:description>
+                  <trans:value>67.2</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALYMS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Lymphocyte Count</trans:description>
+                  <trans:value>23.0</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AMON</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Monocyte Count</trans:description>
+                  <trans:value>4.2</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AEOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Eosinophil Count</trans:description>
+                  <trans:value>4.1</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ABOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Basophil Count</trans:description>
+                  <trans:value>0.11</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+            </CompleteBloodCount>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80061</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Lipid panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <LipidPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80061</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>LDL</trans:x_3>
+                  <trans:CPT>83721</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> LDL</trans:description>
+                  <trans:value>101</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TRIG</trans:x_3>
+                  <trans:CPT>84478</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> Triglycerides</trans:description>
+                  <trans:value>140</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HDL</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description> HDL</trans:description>
+                  <trans:value>59</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </LipidPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80076</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Hepatic function panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <HepaticFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80076</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TP</trans:x_3>
+                  <trans:CPT>84155</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Total Protein</trans:description>
+                  <trans:value>6.5</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AST</trans:x_3>
+                  <trans:CPT>84450</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum glutamic-oxaloacetic transaminase</trans:description>
+                  <trans:value>32</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TBIL</trans:x_3>
+                  <trans:CPT>82247</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Bilirubin, Total</trans:description>
+                  <trans:value>1.1</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALP</trans:x_3>
+                  <trans:CPT>84075</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Alkaline Phosphatase</trans:description>
+                  <trans:value>120</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GGT</trans:x_3>
+                  <trans:CPT>82977</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Gamma Glutamyl Transferase</trans:description>
+                  <trans:value>100</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CRP</trans:x_3>
+                  <trans:CPT>86140</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum C-Reactive Protein</trans:description>
+                  <trans:value>0.4</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </HepaticFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80069</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Renal function panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <RenalFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80069</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>NA</trans:x_3>
+                  <trans:CPT>84295</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Sodium</trans:description>
+                  <trans:value>130</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>K</trans:x_3>
+                  <trans:CPT>84132</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Potassium</trans:description>
+                  <trans:value>3.9</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CREA</trans:x_3>
+                  <trans:CPT>82565</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Creatinine</trans:description>
+                  <trans:value>1.01</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALB</trans:x_3>
+                  <trans:CPT>82040</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Albumin</trans:description>
+                  <trans:value>4.5</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GLU</trans:x_3>
+                  <trans:CPT>82945</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Glucose, serum fasting</trans:description>
+                  <trans:value>110</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CA</trans:x_3>
+                  <trans:CPT>82310</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Calcium</trans:description>
+                  <trans:value>1.01</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CNA</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Corrected Calcium Level</trans:description>
+                  <trans:value>2.09</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>BUN</trans:x_3>
+                  <trans:CPT>84520</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Blood Urea Nitrogen</trans:description>
+                  <trans:value>5</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>URIC</trans:x_3>
+                  <trans:CPT>84550</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Uric Acid</trans:description>
+                  <trans:value>3.6</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </RenalFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>84443</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Thyroid stimulating hormone (TSH)</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <ThyroidFunction xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>84443</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TSH</trans:x_3>
+                  <trans:CPT>84443</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Thyroid Stimulating Hormone</trans:description>
+                  <trans:value>4.0</trans:value>
+                  <trans:units>mcU/ml</trans:units>
+               </trans:testCode>
+            </ThyroidFunction>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter>
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>Henry No</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2008-11-05</trans:dateOfEncounter>
+      <trans:physician>Henry No</trans:physician>
+      <trans:medicalBaseline>true</trans:medicalBaseline>
+      <trans:medicalTest>Annual Medical</trans:medicalTest>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:workingDiagnosis>false</trans:workingDiagnosis>
+      <trans:referral>false</trans:referral>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:physicalObservations rdf:parseType="Resource">
+         <trans:bodyFat_x5 rdf:parseType="Resource">
+            <trans:x6_bodyFat rdf:datatype="tag:eric@w3.org:2009/tmo/translator#percent">27</trans:x6_bodyFat>
+            <trans:weight rdf:datatype="tag:eric@w3.org:2009/tmo/translator#pounds">180</trans:weight>
+            <trans:height rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">73</trans:height>
+            <trans:BMI rdf:datatype="tag:eric@w3.org:2009/tmo/translator#kg/m^2">24</trans:BMI>
+         </trans:bodyFat_x5>
+         <trans:waistToHips rdf:parseType="Resource">
+            <trans:waist rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">40</trans:waist>
+            <trans:hips rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">42</trans:hips>
+            <trans:waistToHips>0.8</trans:waistToHips>
+         </trans:waistToHips>
+         <trans:bloodPressure rdf:parseType="Resource">
+            <trans:systolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">149</trans:systolic>
+            <trans:diastolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">91</trans:diastolic>
+         </trans:bloodPressure>
+         <trans:restingHeartRate rdf:parseType="Resource">
+            <trans:restingHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">72</trans:restingHeartRate>
+         </trans:restingHeartRate>
+         <trans:stamina rdf:parseType="Resource">
+            <trans:finalHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">140</trans:finalHeartRate>
+            <trans:predictedVO2Max rdf:datatype="tag:eric@w3.org:2009/tmo/translator#ml/kg/min">49.2</trans:predictedVO2Max>
+         </trans:stamina>
+         <trans:lungFunction rdf:parseType="Resource">
+            <trans:PEFR rdf:datatype="tag:eric@w3.org:2009/tmo/translator#L/min">420</trans:PEFR>
+         </trans:lungFunction>
+      </trans:physicalObservations>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>85025</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC and platelet count) and automated differential WBC count</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <CompleteBloodCount xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>85025</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HGB</trans:x_3>
+                  <trans:CPT>85018</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hemogloblin</trans:description>
+                  <trans:value>14.0</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>RBC</trans:x_3>
+                  <trans:CPT>85041</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Red Blood Cell Count</trans:description>
+                  <trans:value>6.00</trans:value>
+                  <trans:units>mil/mcl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HCT</trans:x_3>
+                  <trans:CPT>85014</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hematocrit</trans:description>
+                  <trans:value>42.0</trans:value>
+                  <trans:units>percent</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCV</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Cell Volume</trans:description>
+                  <trans:value>89.0</trans:value>
+                  <trans:units>fl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCH</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin</trans:description>
+                  <trans:value>31.0</trans:value>
+                  <trans:units>pg/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCHC</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin Concentration</trans:description>
+                  <trans:value>31.8</trans:value>
+                  <trans:units>Hb/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>PLTC</trans:x_3>
+                  <trans:CPT>85049</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Platelet Count</trans:description>
+                  <trans:value>291</trans:value>
+                  <trans:units>/mm³</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>WBC</trans:x_3>
+                  <trans:CPT>85048</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>White Blood Cell Count</trans:description>
+                  <trans:value>5000</trans:value>
+                  <trans:units>/mm³</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ANEUT</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Neutrophil Count</trans:description>
+                  <trans:value>67.2</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALYMS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Lymphocyte Count</trans:description>
+                  <trans:value>23.0</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AMON</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Monocyte Count</trans:description>
+                  <trans:value>4.2</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AEOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Eosinophil Count</trans:description>
+                  <trans:value>4.1</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ABOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Basophil Count</trans:description>
+                  <trans:value>0.11</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+            </CompleteBloodCount>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80061</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Lipid panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <LipidPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80061</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>LDL</trans:x_3>
+                  <trans:CPT>83721</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> LDL</trans:description>
+                  <trans:value>101</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TRIG</trans:x_3>
+                  <trans:CPT>84478</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> Triglycerides</trans:description>
+                  <trans:value>140</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HDL</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description> HDL</trans:description>
+                  <trans:value>59</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </LipidPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80076</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Hepatic function panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <HepaticFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80076</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TP</trans:x_3>
+                  <trans:CPT>84155</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Total Protein</trans:description>
+                  <trans:value>6.5</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AST</trans:x_3>
+                  <trans:CPT>84450</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum glutamic-oxaloacetic transaminase</trans:description>
+                  <trans:value>32</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TBIL</trans:x_3>
+                  <trans:CPT>82247</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Bilirubin, Total</trans:description>
+                  <trans:value>1.1</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALP</trans:x_3>
+                  <trans:CPT>84075</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Alkaline Phosphatase</trans:description>
+                  <trans:value>120</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GGT</trans:x_3>
+                  <trans:CPT>82977</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Gamma Glutamyl Transferase</trans:description>
+                  <trans:value>100</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CRP</trans:x_3>
+                  <trans:CPT>86140</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum C-Reactive Protein</trans:description>
+                  <trans:value>0.4</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </HepaticFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80069</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Renal function panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <RenalFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80069</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>NA</trans:x_3>
+                  <trans:CPT>84295</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Sodium</trans:description>
+                  <trans:value>130</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>K</trans:x_3>
+                  <trans:CPT>84132</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Potassium</trans:description>
+                  <trans:value>3.9</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CREA</trans:x_3>
+                  <trans:CPT>82565</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Creatinine</trans:description>
+                  <trans:value>1.01</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALB</trans:x_3>
+                  <trans:CPT>82040</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Albumin</trans:description>
+                  <trans:value>4.5</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GLU</trans:x_3>
+                  <trans:CPT>82945</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Glucose, serum fasting</trans:description>
+                  <trans:value>110</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CA</trans:x_3>
+                  <trans:CPT>82310</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Calcium</trans:description>
+                  <trans:value>1.01</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CNA</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Corrected Calcium Level</trans:description>
+                  <trans:value>2.09</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>BUN</trans:x_3>
+                  <trans:CPT>84520</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Blood Urea Nitrogen</trans:description>
+                  <trans:value>5</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>URIC</trans:x_3>
+                  <trans:CPT>84550</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Uric Acid</trans:description>
+                  <trans:value>3.6</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </RenalFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>84443</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Thyroid stimulating hormone (TSH)</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <ThyroidFunction xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>84443</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TSH</trans:x_3>
+                  <trans:CPT>84443</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Thyroid Stimulating Hormone</trans:description>
+                  <trans:value>4.0</trans:value>
+                  <trans:units>mcU/ml</trans:units>
+               </trans:testCode>
+            </ThyroidFunction>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter>
+
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>Mark Tourney</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2003-17-05</trans:dateOfEncounter>
+      <trans:physician>Mark Tourney</trans:physician>
+      <trans:medicalBaseline>false</trans:medicalBaseline>
+      <trans:reportedSymptoms>Declining memory</trans:reportedSymptoms>
+      <trans:workingDiagnosis>
+       
+       
+    </trans:workingDiagnosis>
+      <trans:referral>false</trans:referral>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:physicalObservations rdf:parseType="Resource">
+         <trans:bodyFat_x5 rdf:parseType="Resource">
+            <trans:x6_bodyFat rdf:datatype="tag:eric@w3.org:2009/tmo/translator#percent">27</trans:x6_bodyFat>
+            <trans:weight rdf:datatype="tag:eric@w3.org:2009/tmo/translator#pounds">180</trans:weight>
+            <trans:height rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">73</trans:height>
+            <trans:BMI rdf:datatype="tag:eric@w3.org:2009/tmo/translator#kg/m^2">24</trans:BMI>
+         </trans:bodyFat_x5>
+         <trans:waistToHips rdf:parseType="Resource">
+            <trans:waist rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">40</trans:waist>
+            <trans:hips rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">42</trans:hips>
+            <trans:waistToHips>0.8</trans:waistToHips>
+         </trans:waistToHips>
+         <trans:bloodPressure rdf:parseType="Resource">
+            <trans:systolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">149</trans:systolic>
+            <trans:diastolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">91</trans:diastolic>
+         </trans:bloodPressure>
+         <trans:restingHeartRate rdf:parseType="Resource">
+            <trans:restingHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">72</trans:restingHeartRate>
+         </trans:restingHeartRate>
+         <trans:stamina rdf:parseType="Resource">
+            <trans:finalHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">140</trans:finalHeartRate>
+            <trans:predictedVO2Max rdf:datatype="tag:eric@w3.org:2009/tmo/translator#ml/kg/min">49.2</trans:predictedVO2Max>
+         </trans:stamina>
+         <trans:lungFunction rdf:parseType="Resource">
+            <trans:PEFR rdf:datatype="tag:eric@w3.org:2009/tmo/translator#L/min">420</trans:PEFR>
+         </trans:lungFunction>
+      </trans:physicalObservations>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#ICD9 Procedure"/>
+         <trans:misParse>&lt;ICD9_Procedure&gt;88.91&lt;/ICD9_Procedure&gt;</trans:misParse>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Magnetic resonance imaging of brain and brain</trans:testName>
+         <trans:referredTo>David Tork</trans:referredTo>
+         <trans:referredClinic>Warrington Hospital</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:result rdf:parseType="Resource">
+            <trans:misParse>&lt;hippocampalLeft&gt;0.75&lt;/hippocampalLeft&gt;</trans:misParse>
+            <trans:misParse>&lt;hippocampalRight&gt;0.72&lt;/hippocampalRight&gt;</trans:misParse>
+            <trans:misParse>&lt;temporalRight&gt;1.10&lt;/temporalRight&gt;</trans:misParse>
+            <trans:misParse>&lt;temporalLeft&gt;1.09&lt;/temporalLeft&gt;</trans:misParse>
+            <trans:misParse>&lt;angularRight&gt;1.13&lt;/angularRight&gt;</trans:misParse>
+            <trans:misParse>&lt;angularLeft&gt;1.14&lt;/angularLeft&gt;</trans:misParse>
+            <trans:misParse>&lt;cingulumPostBilateral&gt;1.07&lt;/cingulumPostBilateral&gt;</trans:misParse>
+            <trans:misParse>&lt;hippocampalVolumeTestResult&gt;abnormal&lt;/hippocampalVolumeTestResult&gt;</trans:misParse>
+         </trans:result>
+         <trans:physicianNotes>Cerebral atrophy and signs suggestive of dementia</trans:physicianNotes>
+         <trans:misParse>&lt;originalImage&gt;http:hospital.com/images/patient/5678&lt;/originalImage&gt;</trans:misParse>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#ICD9 Procedure"/>
+         <trans:misParse>&lt;ICD9_Procedure&gt;94.08&lt;/ICD9_Procedure&gt;</trans:misParse>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Mini-mental state examination</trans:testName>
+         <trans:result rdf:parseType="Resource">
+            <trans:misParse>&lt;description&gt;Basic test to indicate dementia less than 20/30 and your in the ball park
+	   &lt;/description&gt;</trans:misParse>
+            <trans:value>28/30</trans:value>
+         </trans:result>
+         <trans:physicianNotes>Falling results</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>85025</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC and platelet count) and automated differential WBC count</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <CompleteBloodCount xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>85025</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HGB</trans:x_3>
+                  <trans:CPT>85018</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hemogloblin</trans:description>
+                  <trans:value>14.0</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>RBC</trans:x_3>
+                  <trans:CPT>85041</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Red Blood Cell Count</trans:description>
+                  <trans:value>6.00</trans:value>
+                  <trans:units>mil/mcl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HCT</trans:x_3>
+                  <trans:CPT>85014</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hematocrit</trans:description>
+                  <trans:value>42.0</trans:value>
+                  <trans:units>percent</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCV</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Cell Volume</trans:description>
+                  <trans:value>89.0</trans:value>
+                  <trans:units>fl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCH</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin</trans:description>
+                  <trans:value>31.0</trans:value>
+                  <trans:units>pg/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCHC</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin Concentration</trans:description>
+                  <trans:value>31.8</trans:value>
+                  <trans:units>Hb/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>PLTC</trans:x_3>
+                  <trans:CPT>85049</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Platelet Count</trans:description>
+                  <trans:value>291</trans:value>
+                  <trans:units>/mm³</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>WBC</trans:x_3>
+                  <trans:CPT>85048</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>White Blood Cell Count</trans:description>
+                  <trans:value>5000</trans:value>
+                  <trans:units>/mm³</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ANEUT</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Neutrophil Count</trans:description>
+                  <trans:value>67.2</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALYMS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Lymphocyte Count</trans:description>
+                  <trans:value>23.0</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AMON</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Monocyte Count</trans:description>
+                  <trans:value>4.2</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AEOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Eosinophil Count</trans:description>
+                  <trans:value>4.1</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ABOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Basophil Count</trans:description>
+                  <trans:value>0.11</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+            </CompleteBloodCount>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>84443</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Thyroid stimulating hormone (TSH)</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <ThyroidFunction xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>84443</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TSH</trans:x_3>
+                  <trans:CPT>84443</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Thyroid Stimulating Hormone</trans:description>
+                  <trans:value>4.0</trans:value>
+                  <trans:units>mcU/ml</trans:units>
+               </trans:testCode>
+            </ThyroidFunction>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter>
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>Mark Tourney</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2005-12-05</trans:dateOfEncounter>
+      <trans:physician>Mark Tourney</trans:physician>
+      <trans:medicalBaseline>false</trans:medicalBaseline>
+      <trans:reportedSymptoms>Declining memory</trans:reportedSymptoms>
+      <trans:workingDiagnosis>
+       
+       
+    </trans:workingDiagnosis>
+      <trans:referral>false</trans:referral>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:physicalObservations rdf:parseType="Resource">
+         <trans:bodyFat_x5 rdf:parseType="Resource">
+            <trans:x6_bodyFat rdf:datatype="tag:eric@w3.org:2009/tmo/translator#percent">27</trans:x6_bodyFat>
+            <trans:weight rdf:datatype="tag:eric@w3.org:2009/tmo/translator#pounds">180</trans:weight>
+            <trans:height rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">73</trans:height>
+            <trans:BMI rdf:datatype="tag:eric@w3.org:2009/tmo/translator#kg/m^2">24</trans:BMI>
+         </trans:bodyFat_x5>
+         <trans:waistToHips rdf:parseType="Resource">
+            <trans:waist rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">40</trans:waist>
+            <trans:hips rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">42</trans:hips>
+            <trans:waistToHips>0.8</trans:waistToHips>
+         </trans:waistToHips>
+         <trans:bloodPressure rdf:parseType="Resource">
+            <trans:systolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">149</trans:systolic>
+            <trans:diastolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">91</trans:diastolic>
+         </trans:bloodPressure>
+         <trans:restingHeartRate rdf:parseType="Resource">
+            <trans:restingHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">72</trans:restingHeartRate>
+         </trans:restingHeartRate>
+         <trans:stamina rdf:parseType="Resource">
+            <trans:finalHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">140</trans:finalHeartRate>
+            <trans:predictedVO2Max rdf:datatype="tag:eric@w3.org:2009/tmo/translator#ml/kg/min">49.2</trans:predictedVO2Max>
+         </trans:stamina>
+         <trans:lungFunction rdf:parseType="Resource">
+            <trans:PEFR rdf:datatype="tag:eric@w3.org:2009/tmo/translator#L/min">420</trans:PEFR>
+         </trans:lungFunction>
+      </trans:physicalObservations>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#ICD9 Procedure"/>
+         <trans:misParse>&lt;ICD9_Procedure&gt;88.91&lt;/ICD9_Procedure&gt;</trans:misParse>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Magnetic resonance imaging of brain and brain</trans:testName>
+         <trans:referredTo>David Tork</trans:referredTo>
+         <trans:referredClinic>Warrington Hospital</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:result rdf:parseType="Resource">
+            <trans:misParse>&lt;hippocampalLeft&gt;0.75&lt;/hippocampalLeft&gt;</trans:misParse>
+            <trans:misParse>&lt;hippocampalRight&gt;0.72&lt;/hippocampalRight&gt;</trans:misParse>
+            <trans:misParse>&lt;temporalRight&gt;1.10&lt;/temporalRight&gt;</trans:misParse>
+            <trans:misParse>&lt;temporalLeft&gt;1.09&lt;/temporalLeft&gt;</trans:misParse>
+            <trans:misParse>&lt;angularRight&gt;1.13&lt;/angularRight&gt;</trans:misParse>
+            <trans:misParse>&lt;angularLeft&gt;1.14&lt;/angularLeft&gt;</trans:misParse>
+            <trans:misParse>&lt;cingulumPostBilateral&gt;1.07&lt;/cingulumPostBilateral&gt;</trans:misParse>
+            <trans:misParse>&lt;hippocampalVolumeTestResult&gt;abnormal&lt;/hippocampalVolumeTestResult&gt;</trans:misParse>
+         </trans:result>
+         <trans:physicianNotes>Cerebral atrophy and signs suggestive of dementia</trans:physicianNotes>
+         <trans:misParse>&lt;originalImage&gt;http:hospital.com/images/patient/5678&lt;/originalImage&gt;</trans:misParse>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#ICD9 Procedure"/>
+         <trans:misParse>&lt;ICD9_Procedure&gt;94.08&lt;/ICD9_Procedure&gt;</trans:misParse>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Mini-mental state examination</trans:testName>
+         <trans:result rdf:parseType="Resource">
+            <trans:misParse>&lt;description&gt;Basic test to indicate dementia less than 20/30 and your in the ball park
+	   &lt;/description&gt;</trans:misParse>
+            <trans:value>17/30</trans:value>
+         </trans:result>
+         <trans:physicianNotes>Falling results</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>85025</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Blood count; complete (CBC), automated (Hgb, Hct, RBC, WBC and platelet count) and automated differential WBC count</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <CompleteBloodCount xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>85025</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HGB</trans:x_3>
+                  <trans:CPT>85018</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hemogloblin</trans:description>
+                  <trans:value>14.0</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>RBC</trans:x_3>
+                  <trans:CPT>85041</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Red Blood Cell Count</trans:description>
+                  <trans:value>6.00</trans:value>
+                  <trans:units>mil/mcl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HCT</trans:x_3>
+                  <trans:CPT>85014</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Hematocrit</trans:description>
+                  <trans:value>42.0</trans:value>
+                  <trans:units>percent</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCV</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Cell Volume</trans:description>
+                  <trans:value>89.0</trans:value>
+                  <trans:units>fl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCH</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin</trans:description>
+                  <trans:value>31.0</trans:value>
+                  <trans:units>pg/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>MCHC</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Mean Corpuscular Hemoglobin Concentration</trans:description>
+                  <trans:value>31.8</trans:value>
+                  <trans:units>Hb/cell</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>PLTC</trans:x_3>
+                  <trans:CPT>85049</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Platelet Count</trans:description>
+                  <trans:value>291</trans:value>
+                  <trans:units>/mm³</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>WBC</trans:x_3>
+                  <trans:CPT>85048</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>White Blood Cell Count</trans:description>
+                  <trans:value>5000</trans:value>
+                  <trans:units>/mm³</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ANEUT</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Neutrophil Count</trans:description>
+                  <trans:value>67.2</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALYMS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Lymphocyte Count</trans:description>
+                  <trans:value>23.0</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AMON</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Monocyte Count</trans:description>
+                  <trans:value>4.2</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AEOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Eosinophil Count</trans:description>
+                  <trans:value>4.1</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ABOS</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Absolute Basophil Count</trans:description>
+                  <trans:value>0.11</trans:value>
+                  <trans:units>%</trans:units>
+               </trans:testCode>
+            </CompleteBloodCount>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80061</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Lipid panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <LipidPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80061</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>LDL</trans:x_3>
+                  <trans:CPT>83721</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> LDL</trans:description>
+                  <trans:value>101</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TRIG</trans:x_3>
+                  <trans:CPT>84478</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description> Triglycerides</trans:description>
+                  <trans:value>140</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>HDL</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description> HDL</trans:description>
+                  <trans:value>59</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </LipidPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80076</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Hepatic function panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <HepaticFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80076</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TP</trans:x_3>
+                  <trans:CPT>84155</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Total Protein</trans:description>
+                  <trans:value>6.5</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>AST</trans:x_3>
+                  <trans:CPT>84450</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum glutamic-oxaloacetic transaminase</trans:description>
+                  <trans:value>32</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TBIL</trans:x_3>
+                  <trans:CPT>82247</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Bilirubin, Total</trans:description>
+                  <trans:value>1.1</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALP</trans:x_3>
+                  <trans:CPT>84075</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Alkaline Phosphatase</trans:description>
+                  <trans:value>120</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GGT</trans:x_3>
+                  <trans:CPT>82977</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Gamma Glutamyl Transferase</trans:description>
+                  <trans:value>100</trans:value>
+                  <trans:units>IU/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CRP</trans:x_3>
+                  <trans:CPT>86140</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum C-Reactive Protein</trans:description>
+                  <trans:value>0.4</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </HepaticFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>80069</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Renal function panel</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <RenalFunctionPanel xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>80069</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>NA</trans:x_3>
+                  <trans:CPT>84295</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Sodium</trans:description>
+                  <trans:value>130</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>K</trans:x_3>
+                  <trans:CPT>84132</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Potassium</trans:description>
+                  <trans:value>3.9</trans:value>
+                  <trans:units>mmol/l</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CREA</trans:x_3>
+                  <trans:CPT>82565</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Creatinine</trans:description>
+                  <trans:value>1.01</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>ALB</trans:x_3>
+                  <trans:CPT>82040</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Albumin</trans:description>
+                  <trans:value>4.5</trans:value>
+                  <trans:units>g/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>GLU</trans:x_3>
+                  <trans:CPT>82945</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Glucose, serum fasting</trans:description>
+                  <trans:value>110</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CA</trans:x_3>
+                  <trans:CPT>82310</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Calcium</trans:description>
+                  <trans:value>1.01</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>CNA</trans:x_3>
+                  <trans:CPT/>
+                  <trans:LOINC/>
+                  <trans:description>Corrected Calcium Level</trans:description>
+                  <trans:value>2.09</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>BUN</trans:x_3>
+                  <trans:CPT>84520</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Blood Urea Nitrogen</trans:description>
+                  <trans:value>5</trans:value>
+                  <trans:units>mmol/L</trans:units>
+               </trans:testCode>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>URIC</trans:x_3>
+                  <trans:CPT>84550</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Serum Uric Acid</trans:description>
+                  <trans:value>3.6</trans:value>
+                  <trans:units>mg/dl</trans:units>
+               </trans:testCode>
+            </RenalFunctionPanel>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#Laboratory"/>
+         <trans:CPT>84443</trans:CPT>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Thyroid stimulating hormone (TSH)</trans:testName>
+         <trans:referredTo>Janet Day</trans:referredTo>
+         <trans:referredClinic>Family Health Laboratories</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:testSet>
+            <ThyroidFunction xmlns="tag:eric@w3.org:2009/tmo/translator#">
+               <trans:x_3>84443</trans:x_3>
+               <trans:testCode rdf:parseType="Resource">
+                  <trans:x_3>TSH</trans:x_3>
+                  <trans:CPT>84443</trans:CPT>
+                  <trans:LOINC/>
+                  <trans:description>Thyroid Stimulating Hormone</trans:description>
+                  <trans:value>4.0</trans:value>
+                  <trans:units>mcU/ml</trans:units>
+               </trans:testCode>
+            </ThyroidFunction>
+         </trans:testSet>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter>
+
+
+   <trans:Encounter>
+      <trans:patient rdf:resource="#me"/>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Patient"/>
+            <trans:persona rdf:resource="#me"/>
+         </trans:Participation>
+      </trans:participant>
+      <trans:participant>
+         <trans:Participation>
+            <trans:role rdf:resource="tag:eric@w3.org:2009/tmo/translator#Physician"/>
+            <trans:persona>
+               <foaf:Person>
+                  <foaf:name>Mark Tourney</foaf:name>
+               </foaf:Person>
+            </trans:persona>
+         </trans:Participation>
+      </trans:participant>
+      <!-- indivo:Lab/dateMeasured --><trans:dateOfEncounter>2007-10-15</trans:dateOfEncounter>
+      <trans:physician>Mark Tourney</trans:physician>
+      <trans:medicalBaseline>false</trans:medicalBaseline>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:workingDiagnosis>
+       
+       
+    </trans:workingDiagnosis>
+      <trans:referral>false</trans:referral>
+      <trans:reportedSymptoms>false</trans:reportedSymptoms>
+      <trans:physicalObservations rdf:parseType="Resource">
+         <trans:bodyFat_x5 rdf:parseType="Resource">
+            <trans:x6_bodyFat rdf:datatype="tag:eric@w3.org:2009/tmo/translator#percent">27</trans:x6_bodyFat>
+            <trans:weight rdf:datatype="tag:eric@w3.org:2009/tmo/translator#pounds">180</trans:weight>
+            <trans:height rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">73</trans:height>
+            <trans:BMI rdf:datatype="tag:eric@w3.org:2009/tmo/translator#kg/m^2">24</trans:BMI>
+         </trans:bodyFat_x5>
+         <trans:waistToHips rdf:parseType="Resource">
+            <trans:waist rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">40</trans:waist>
+            <trans:hips rdf:datatype="tag:eric@w3.org:2009/tmo/translator#inches">42</trans:hips>
+            <trans:waistToHips>0.8</trans:waistToHips>
+         </trans:waistToHips>
+         <trans:bloodPressure rdf:parseType="Resource">
+            <trans:systolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">149</trans:systolic>
+            <trans:diastolic rdf:datatype="tag:eric@w3.org:2009/tmo/translator#mmHg">91</trans:diastolic>
+         </trans:bloodPressure>
+         <trans:restingHeartRate rdf:parseType="Resource">
+            <trans:restingHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">72</trans:restingHeartRate>
+         </trans:restingHeartRate>
+         <trans:stamina rdf:parseType="Resource">
+            <trans:finalHeartRate rdf:datatype="tag:eric@w3.org:2009/tmo/translator#BPM">140</trans:finalHeartRate>
+            <trans:predictedVO2Max rdf:datatype="tag:eric@w3.org:2009/tmo/translator#ml/kg/min">49.2</trans:predictedVO2Max>
+         </trans:stamina>
+         <trans:lungFunction rdf:parseType="Resource">
+            <trans:PEFR rdf:datatype="tag:eric@w3.org:2009/tmo/translator#L/min">420</trans:PEFR>
+         </trans:lungFunction>
+      </trans:physicalObservations>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#ICD9 Procedure"/>
+         <trans:misParse>&lt;ICD9_Procedure&gt;88.91&lt;/ICD9_Procedure&gt;</trans:misParse>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Magnetic resonance imaging of brain and brain</trans:testName>
+         <trans:referredTo>David Tork</trans:referredTo>
+         <trans:referredClinic>Warrington Hospital</trans:referredClinic>
+         <trans:referredBy>Henry No</trans:referredBy>
+         <trans:result rdf:parseType="Resource">
+            <trans:misParse>&lt;hippocampalLeft&gt;0.75&lt;/hippocampalLeft&gt;</trans:misParse>
+            <trans:misParse>&lt;hippocampalRight&gt;0.72&lt;/hippocampalRight&gt;</trans:misParse>
+            <trans:misParse>&lt;temporalRight&gt;1.10&lt;/temporalRight&gt;</trans:misParse>
+            <trans:misParse>&lt;temporalLeft&gt;1.09&lt;/temporalLeft&gt;</trans:misParse>
+            <trans:misParse>&lt;angularRight&gt;1.13&lt;/angularRight&gt;</trans:misParse>
+            <trans:misParse>&lt;angularLeft&gt;1.14&lt;/angularLeft&gt;</trans:misParse>
+            <trans:misParse>&lt;cingulumPostBilateral&gt;1.07&lt;/cingulumPostBilateral&gt;</trans:misParse>
+            <trans:misParse>&lt;hippocampalVolumeTestResult&gt;abnormal&lt;/hippocampalVolumeTestResult&gt;</trans:misParse>
+         </trans:result>
+         <trans:physicianNotes>Cerebral atrophy and signs suggestive of dementia</trans:physicianNotes>
+         <trans:misParse>&lt;originalImage&gt;http:hospital.com/images/patient/5678&lt;/originalImage&gt;</trans:misParse>
+         <trans:physicianNotes>...</trans:physicianNotes>
+      </trans:test>
+      <trans:test rdf:parseType="Resource"><!-- ++ indivo:Lab/labPanel/labText or indivo:Lab/labPanel --><trans:testType rdf:resource="tag:eric@w3.org:2009/tmo/translator#ICD9 Procedure"/>
+         <trans:misParse>&lt;ICD9_Procedure&gt;94.08&lt;/ICD9_Procedure&gt;</trans:misParse>
+         <!-- ++ indivo:Lab/labPanel/labText/name --><trans:testName>Mini-mental state examination</trans:testName>
+         <trans:result rdf:parseType="Resource">
+            <trans:misParse>&lt;description&gt;Basic test to indicate dementia less than 20/30 and your in the ball park
+	   &lt;/description&gt;</trans:misParse>
+            <trans:value>15/30</trans:value>
+         </trans:result>
+         <trans:physicianNotes>Falling results</trans:physicianNotes>
+      </trans:test>
+   </trans:Encounter>
+
+
+</rdf:RDF>

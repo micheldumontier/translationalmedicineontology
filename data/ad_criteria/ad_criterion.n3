@@ -1,0 +1,105 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix iao: <http://purl.obolibrary.org/obo/>.
+@prefix ro: <http://www.obofoundry.org/ro/ro.owl#>.
+@prefix tmo: <http://www.w3.org/2001/sw/hcls/ns/transmed/>.
+@prefix dubois: <http://bio2rdf.org/dubois:>.
+@prefix diseasome: <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseases/>.
+
+
+dubois:panel2 a iao:IAO_0000300 .
+dubois:panel2 rdfs:label "Alzheimer Disease diagnostic criteria as reported in panel 2 of dubois et al - pubmed:17616482  [dubois:panel2]".
+# the panel is about alzheimer disease
+dubois:panel2 iao:is_about diseasome:74.
+# the panel is from the article article
+dubois:panel2 ro:part_of <http://bio2rdf.org/pubmed:17616482>.
+# the panel is about diagnostic criterion
+dubois:panel2 iao:is_about tmo:TMO_0068.
+
+dubois:1 rdfs:label "Presence of an early and significant episodic memory impairment [dubois:1]" ;
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:2 rdfs:label "Gradual and progressive change in memory function reported by patients or informants over more than 6 months [dubois:2]";
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:3 rdfs:label "Objective evidence of significantly impaired episodic memory on testing: this generally consists of recall deficit that does not improve significantly or does not normalise with cueing or recognition testing and after effective encoding of information has been previously controlled [dubois:3]";
+ a tmo:TMO_0069 ;
+ iao:is_about diseasome:74.
+
+dubois:4 rdfs:label "The episodic memory impairment can be isolated or associated with other cognitive changes at the onset of AD or as AD advances [dubois:4]";
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+
+dubois:5 rdfs:label "Presence of medial temporal lobe atrophy [dubois:5]";
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:6 rdfs:label "Volume loss of hippocampi, entorhinal cortex, amygdala evidenced on MRI with qualitative ratings using visual scoring (referenced to well characterised population with age norms) or quantitative volumetry of regions of interest (referenced to well characterised population with age norms) [dubois:6]" ;
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:7 rdfs:label "Abnormal cerebrospinal fluid biomarker [dubois:7]" ;
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:8 rdfs:label "Low amyloid 􃘊2 concentrations, increased total tau concentrations, or increased phospho-tau concentrations, or combinations of the three [dubois:8]" ;
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:9 rdfs:label "Reduced glucose metabolism in bilateral temporal parietal regions with PET [dubois:9]" ;
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:10 rdfs:label "Proven AD autosomal dominant mutation within the immediate family [dubois:10]" ;
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:11 rdfs:label "Sudden onset [dubois:11]" ;
+ a tmo:TMO_0070;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:12 rdfs:label "Early occurrence of the following symptoms: gait disturbances, seizures, behavioural changes [dubois:12]" ;
+ a tmo:TMO_0070;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:13 rdfs:label "Early extrapyramidal signs [dubois:13]" ;
+ a tmo:TMO_0070;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:14 rdfs:label "Focal neurological features including hemiparesis, sensory loss, visual field deficits [dubois:14]" ;
+ a tmo:TMO_0070;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:15 rdfs:label "Non-AD dementia [dubois:15]" ;
+ a tmo:TMO_0070;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:16 rdfs:label "Major depression [dubois:16]" ;
+ a tmo:TMO_0070;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:17 rdfs:label "Cerebrovascular disease [dubois:17]" ;
+ a tmo:TMO_0070;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:18 rdfs:label "Toxic and metabolic abnormalities [dubois:18]" ;
+ a tmo:TMO_0070;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:19 rdfs:label "MRI FLAIR or T2 signal abnormalities in the medial temporal lobe that are consistent with infectious or vascular insults [dubois:19]" ;
+ a tmo:TMO_0070;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+
+dubois:20 rdfs:label "Both clinical and histopathological (brain biopsy or autopsy) evidence of the disease, as required by the NIA-Reagan criteria for the post-mortem diagnosis of AD [dubois:20]" ;
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+dubois:21 rdfs:label "Both clinical and genetic evidence (mutation on chromosome 1, 14, or 21) of AD [dubois:21]" ;
+ a tmo:TMO_0069;
+ ro:part_of dubois:panel2;
+ iao:is_about diseasome:74.
+
+

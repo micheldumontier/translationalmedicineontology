@@ -1,0 +1,1894 @@
+# Saved by TopBraid on Sat Mar 03 21:16:26 CET 2012
+# baseURI: file:/C:/Users/m/TBCFreeWorkspace/TMO/usage_examples/Core-pharmacogenomic-markers.ttl
+
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<file:/C:/Users/m/TBCFreeWorkspace/TMO/usage_examples/Core-pharmacogenomic-markers.ttl>
+      rdf:type owl:Ontology .
+
+<http://example.org/variant_DNA_region_Rs2395029>
+      rdf:type owl:Class ;
+      rdfs:comment "(Proxy SNP in HCP5)" ;
+      rdfs:label "Variant DNA region defined by dbSNP entry Rs2395029" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs10038095>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs10038095" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs10264272>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs10264272" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs10276036>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs10276036" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1041983>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1041983" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1042713>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1042713" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1042714>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1042714" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1045642>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1045642" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1048943>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1048943" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1050828>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1050828" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1050829>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1050829" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs10509681>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs10509681" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1051266>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1051266" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1051296>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1051296" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1051298>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1051298" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1057910>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1057910" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1057911>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1057911" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1058930>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1058930" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1060915>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1060915" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1065411>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1065411" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1065776>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1065776" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1065852>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1065852" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1080985>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1080985" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs10929302>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs10929302" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs10935838>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs10935838" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs11045819>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs11045819" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs11045852>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs11045852" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs11045853>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs11045853" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs11188072>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs11188072" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1128503>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1128503" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1131596>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1131596" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1135840>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1135840" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1138272>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1138272" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1142345>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1142345" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1143671>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1143671" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1143672>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1143672" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs11568626>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs11568626" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs11568732>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs11568732" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs11572080>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs11572080" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs11572103>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs11572103" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs118203756>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs118203756" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs118203757>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs118203757" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs118203759>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs118203759" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1208>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1208" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12208357>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12208357" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12248560>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12248560" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12516>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12516" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12571421>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12571421" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12659>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12659" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12720441>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12720441" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12720461>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12720461" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12721608>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12721608" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12721627>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12721627" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12721629>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12721629" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12721634>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12721634" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12721649>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12721649" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12721655>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12721655" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12769205>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12769205" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs12979860>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs12979860" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs13404099>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs13404099" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs137852328>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs137852328" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs139257324>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs139257324" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs140790673>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs140790673" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs142965323>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs142965323" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs147545709>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs147545709" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs16940>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs16940" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs16941>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs16941" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs16942>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs16942" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs16947>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs16947" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1695>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1695" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17238484>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17238484" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17238540>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17238540" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17244841>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17244841" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17599948>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17599948" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17708472>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17708472" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17861157>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17861157" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17878459>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17878459" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17878649>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17878649" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17879685>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17879685" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17879992>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17879992" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17880887>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17880887" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17881535>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17881535" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17882687>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17882687" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17884712>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17884712" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17884832>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17884832" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17885098>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17885098" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs17886522>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs17886522" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1799732>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1799732" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1799752>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1799752" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1799814>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1799814" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1799853>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1799853" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1799929>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1799929" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1799930>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1799930" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1799931>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1799931" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1799949>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1799949" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1799966>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1799966" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1800031>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1800031" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1800460>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1800460" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1800462>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1800462" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1800497>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1800497" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1800566>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1800566" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1800584>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1800584" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1800888>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1800888" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801028>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801028" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801030>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801030" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801131>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801131" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801133>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801133" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801158>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801158" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801159>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801159" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801160>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801160" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801252>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801252" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801253>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801253" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801265>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801265" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801266>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801266" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801267>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801267" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801268>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801268" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801272>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801272" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801279>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801279" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1801280>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1801280" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1805123>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1805123" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1805124>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1805124" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1805158>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1805158" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1809810>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1809810" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs1902023>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs1902023" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2032582>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2032582" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs20417>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs20417" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2046934>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2046934" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2066853>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2066853" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2069514>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2069514" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2069526>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2069526" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2115819>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2115819" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2230037>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2230037" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2231142>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2231142" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2235013>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2235013" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2235033>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2235033" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2256871>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2256871" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2257212>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2257212" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2273697>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2273697" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2279341>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2279341" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2279342>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2279342" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2279343>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2279343" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2279344>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2279344" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2282143>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2282143" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2293616>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2293616" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2306168>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2306168" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2306283>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2306283" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2359612>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2359612" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2470890>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2470890" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2472304>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2472304" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2740574>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2740574" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28371685>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28371685" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28371686>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28371686" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28371706>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28371706" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28371725>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28371725" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28371759>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28371759" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28374453>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28374453" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399424>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399424" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399433>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399433" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399434>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399434" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399435>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399435" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399444>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399444" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399447>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399447" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399454>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399454" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399468>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399468" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399499>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399499" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399504>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399504" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs28399513>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs28399513" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2844682>
+      rdf:type owl:Class ;
+      rdfs:comment "(Proxy SNP in MUC21)" ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2844682" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs2884737>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs2884737" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3092995>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3092995" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs316019>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs316019" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3211369>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3211369" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3211371>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3211371" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3213619>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3213619" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs33926104>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs33926104" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs33973337>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs33973337" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs33980385>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs33980385" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34059508>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34059508" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34097093>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34097093" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34130495>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34130495" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34223104>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34223104" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34284776>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34284776" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34489327>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34489327" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34671512>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34671512" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34698757>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34698757" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34743033>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34743033" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34826503>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34826503" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34883432>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34883432" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34946978>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34946978" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs34993780>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs34993780" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35010098>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35010098" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35266616>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35266616" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35303484>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35303484" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35350960>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35350960" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35468935>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35468935" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35622401>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35622401" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35694136>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35694136" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35742686>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35742686" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35773040>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35773040" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35796837>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35796837" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs35979566>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs35979566" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs36056539>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs36056539" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs36060847>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs36060847" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs36079186>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs36079186" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs36103319>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs36103319" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs36210421>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs36210421" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3740066>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3740066" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3745274>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3745274" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3758580>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3758580" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3758581>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3758581" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3761738>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3761738" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3761739>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3761739" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3807375>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3807375" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3814055>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3814055" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3815459>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3815459" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3826711>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3826711" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3846662>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3846662" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3846663>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3846663" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3892097>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3892097" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3909184>
+      rdf:type owl:Class ;
+      rdfs:comment "(Proxy SNP in FLOT1)" ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3909184" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs3918290>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs3918290" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4124874>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4124874" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs41279854>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs41279854" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs41291556>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs41291556" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs41303343>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs41303343" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4148323>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4148323" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4149015>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4149015" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4149056>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4149056" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4149117>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4149117" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4244285>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4244285" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4417205>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4417205" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs45482602>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs45482602" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs45486893>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs45486893" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4629571>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4629571" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4633>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4633" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4646277>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4646277" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4646278>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4646278" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4646438>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4646438" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4680>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4680" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4704209>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4704209" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4802101>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4802101" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4803418>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4803418" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4803419>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4803419" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4818>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4818" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4917623>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4917623" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986782>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986782" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986783>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986783" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986850>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986850" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986852>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986852" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986891>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986891" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986893>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986893" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986894>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986894" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986907>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986907" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986908>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986908" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986909>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986909" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986910>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986910" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4986913>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4986913" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs4987161>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs4987161" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5030655>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5030655" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5030656>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5030656" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5030839>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5030839" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5030862>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5030862" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5030863>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5030863" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5030865>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5030865" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5030867>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5030867" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5030868>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5030868" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5031016>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5031016" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5031017>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5031017" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5219>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5219" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5275>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5275" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs55640102>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs55640102" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs55737008>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs55737008" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs55750087>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs55750087" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs55752064>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs55752064" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs55785340>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs55785340" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs55793712>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs55793712" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs55886062>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs55886062" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs55901008>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs55901008" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs55918055>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs55918055" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs55965422>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs55965422" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56061388>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56061388" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56101265>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56101265" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56107638>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56107638" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56160784>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56160784" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56161402>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56161402" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56165452>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56165452" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56172717>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56172717" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56199088>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56199088" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56199535>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56199535" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56220353>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56220353" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56276455>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56276455" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5629>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5629" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56296335>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56296335" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56313657>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56313657" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56318881>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56318881" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56337013>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56337013" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56379106>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56379106" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs56387224>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs56387224" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs57505750>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs57505750" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs5853517>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs5853517" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs58973490>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs58973490" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs59113707>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs59113707" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs59421388>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs59421388" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs59502379>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs59502379" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs59710386>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs59710386" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs6025>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs6025" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs61736512>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs61736512" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs6269>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs6269" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs6277>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs6277" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs628031>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs628031" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs6413438>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs6413438" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs6453131>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs6453131" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs67807361>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs67807361" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs6791924>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs6791924" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs6809699>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs6809699" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs689466>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs689466" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs701265>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs701265" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs7088784>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs7088784" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs717620>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs717620" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs7196161>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs7196161" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72547511>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72547511" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72547512>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72547512" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72547513>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72547513" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72547515>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72547515" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72547516>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72547516" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72547517>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72547517" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72549303>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72549303" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72549306>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72549306" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72549309>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72549309" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72552267>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72552267" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72558184>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72558184" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72558186>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72558186" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72558187>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72558187" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72558188>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72558188" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72558189>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72558189" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72558190>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72558190" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72558192>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72558192" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72558193>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72558193" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72559745>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72559745" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs72559748>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs72559748" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs7294>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs7294" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs7311358>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs7311358" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs7439366>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs7439366" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs762551>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs762551" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs7626962>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs7626962" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs76293380>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs76293380" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs76723693>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs76723693" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs776746>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs776746" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs78060119>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs78060119" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs7900194>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs7900194" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs7902257>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs7902257" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs79135870>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs79135870" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs7916649>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs7916649" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs799912>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs799912" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs799917>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs799917" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs80081766>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs80081766" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs8050894>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs8050894" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs8175347>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs8175347" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs8176318>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs8176318" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs8177504>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs8177504" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs8177507>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs8177507" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs8177516>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs8177516" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs8177517>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs8177517" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs8192709>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs8192709" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs8192719>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs8192719" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs873478>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs873478" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs887829>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs887829" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs890293>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs890293" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs9282861>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs9282861" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs9332130>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs9332130" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs9332131>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs9332131" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs9332239>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs9332239" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs9908805>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs9908805" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs9911630>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs9911630" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs9923231>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs9923231" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .
+
+<http://example.org/variant_DNA_region_rs9934438>
+      rdf:type owl:Class ;
+      rdfs:label "Variant DNA region defined by dbSNP entry rs9934438" ;
+      rdfs:subClassOf <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0172> .

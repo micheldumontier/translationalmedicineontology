@@ -1,0 +1,253 @@
+* *************************************************************************
+
+$Id: tmo_r6_comments.txt 9 2009-10-17 20:33:31Z elgar.pichler $
+$Revision: 9 $
+$Author: elgar.pichler $
+$Date: 2009-10-17 20:33:31 +0000 (Sat, 17 Oct 2009) $
+Type: Text file.
+
+Contents: Comments on tmo.owl (r6).
+
+Comments:
+This document contains comments by Elgar Pichler on
+ - tmo.owl (r6)
+ - classes in that file
+ - and on some classes from the current Translational_Medicine_Ontology
+   Google document (that are missing from tmo.owl)
+
+***************************************************************************
+
+
+* *************************************************************************
+
+Modifications:
+2009-10-16T16:56:20-0400	E. Pichler
+  - initial version
+
+***************************************************************************
+
+
+* *************************************************************************
+
+* Comments on ontology in general
+  -------------------------------
+
+** label
+Should not contain spaces; replace ' ' by '_' to get standard display?
+
+** DbXref
+Are recorded in the format <ID_space>:<ID>
+where:
+ ID_Space  source
+ --------------------------------------------------------------------------
+ ACGT	   Cancer Research and Management ACGT Master Ontology
+ BIRNLex   BIRNLex
+ BRO       Biomedical research Ontology
+ CHEBI	   Chemical Entities of Biological Interest
+ CPR	   Computer-based Patient Record Ontology
+ DOID	   Human Disease Ontology
+ EFO	   Experimental Factor Ontology
+ FHHO	   Family Health History Ontology
+ FMA	   Foundational Model of Anatomy
+ GO	   Gene Ontology
+ GRO	   Gene Regulation Ontology
+ Galen	   Galen
+ HL7V3.0   HL7 Version 3.0
+ IEV	   Event (INOH Pathway Ontology) 
+ LNC	   Logical Observation Identifier Names and Codes
+ MI	   Protein-protein Interaction Ontology
+ MSH	   Medical Subject Headings
+ NCIt	   NCI Thesaurus 
+ NDFRT	   National Drug File
+ OBI	   Ontology for Biomedical Investigations
+ OCRe	   Ontology for Clinical Research
+ ODGI	   Ontology for Disease Genetic Investigation
+ PATO	   Phenotypic Quality Ontology
+ PRO	   PRotein Ontology
+ SNOMEDCT  SNOMED Clinical Terms
+ SO	   Sequence Ontology
+ UMLS	   Unified Medical Language System
+
+Are found in the following way:
+ - take spreadsheet external reference IDs
+ - query NCBO BioPortal
+     if possible Exact Match search
+     if not found Contains search
+     hand pick IDs for sources which seem relevant
+ - look up terms in UMLS
+     get UMLS CUIs (supercedes UMLS CUIs found in BioPortal)
+     add IDs for relevant sources (supercedes BioPortal IDs)
+
+
+
+* comments on specific ontology classes
+  -------------------------------------
+
+** adverse_drug_event
+Can this be covered by (drug_)toxicity?
+
+** arm_of_clinical_study
+Can this be put in relationship with clinical_study? Replace by
+clinical_study_arm?
+See also comments on subset_of_population.
+
+** clinical_protocol
+How does this compare to / could it be replaced by "Study Protocol"
+(UMLS:C2348563)?
+
+** clinical_study
+Missing. Put under planned_process or under study? Is clinical_trial taking
+care of that?
+
+** clinical_trial_protocol
+isA clinical_protocol, right?
+
+** compound
+Missing.
+
+** cost
+Missing.
+
+** copy_number_variation
+Why isA information_content_entity?
+Only multi-word label with underscore instead of spaces. See comment above
+on labels. Preferably change all other label spaces to underscores.
+Consider also replacing this with either copy_number or
+copy_number_polymorphism, two terms from NCIt:
+ - NCIt:Copy_Number
+   UMLS:C1707513
+   Definition: NCIt: The number of molecules of a particular type on or in
+   a cell or part of a cell. Usually applied to specific genes or to
+   plasmids within a bacterium.
+ - NCIt:Copy_Number_Polymorphism
+   UMLS:C1511518
+   Definition: NCIt: Variation in the number of copies of a particular
+   sequence within the genetic material of an individual. Large-scale copy
+   number polymorphisms are common and widely distributed in the human
+   genome. 
+
+** diagnosis_result
+The result of diagnosis_process, right? That should be in definition.
+
+** diagnosis_process
+Checked this in a number of definitions invarious sources. diagnosis is
+always understood to be the process of detecting or classifying a disease
+or condition. Replace by diagnosis? If we agree on that, then all the found
+xrefs (for diagnosis) are OK.
+
+** disease
+
+** disease_course
+Replace by more common concept disease_progression. Then found xrefs (for
+disease_progression) are OK.
+
+** dosage
+Assume that dose is a synonym, at least most of the time.
+
+** drug_interaction
+Missing. We only have drug_drug_interaction. Is this enough? Isn't
+drug_(target_)interaction important too?
+
+** environment
+Missing. Only have environmental_measure. Are we fine with that. Not all
+environments are / can be described by environmental measure.
+
+** evidence
+Missing. See also comments on piece_of_evidence.
+
+** hypothesis
+Is not a role.
+
+** image
+Why does this have an xref OBI:IAO_0000313 but is not defined by IAO?
+
+** institution
+Why isA dependent_continuant? Shouldn't it be an independent_continuant?
+[I'm getting confused.]
+
+** lifestyle
+Missing, but I'm not really missing that one. Can be covered by evidence
+and medical_history.
+
+** medical_history
+If medical_history is defined this way, then we are talking about
+personal_medical_history, which is sometimes distinguished from
+family_medical_history. Then all the found xrefs (for
+(personal_)medical_history) are OK.
+
+** mode_of_action
+
+Replace by mechanism_of_action? Or accept found xrefs (for
+mechanism_of_action).
+
+molecular_entity
+Why is molecule not enough? I think, I kind of know the answer - this is a bag
+of things (atom, ion, molecule, ...). 
+
+** observation
+Missing, but I'm not missing that one either. And evidence should cover it.
+
+** outcome
+Missing, and not missed.
+
+** patient
+Missing class.
+
+** payer
+Why isA institution?
+
+** phenotype
+Missing. And that one I miss.
+
+** piece_of_evidence
+Replace by evidence_piece? But is this really necessary? evidence alone is
+sufficient. Then all found xrefs (for evidence) are OK. Levels of evidence
+can still be assessed with 'evidence'. E.g.: some evidence might suggest a
+disease A, some evidence might suggest not-A; level of evidence can be
+established by considering all evidence.
+
+** prognosis
+Is not a role.
+
+** safety
+Missing. And that one is hard to treat ontologically. As a research area
+it's out of scope. As drug_safety or patient_safety it's still
+vague. Aargh.
+
+** side_effect
+Missing; add? Don't quite like "process participated in by patient".
+Also don't like all of my (NCIt's)  original definition. It really is any
+(positive/negative, known/unknown) effect that a drug has, apart from the
+intended effect, that it was approved for initially. Clearly this is
+important.
+NCIt:Side_Effect
+
+** sign
+Note, UMLS maps this to "Physical findings" (UMLS:C0311392).
+ 
+** SNP
+Why isA information_content_entity? Why not a sequence?
+Can also be a sequence type or feature in SO.
+Definition: NCIt: A variation of a single nucleotide at a specific location
+of the genome due to base substitution, present at an appreciable frequency
+between individuals of a single interbreeding population.
+
+** subset_of_population
+Why is this a class instead of restricting the population class by certain
+criteria?
+Wouldn't population be enough? Same argument as for piece_of_evidence. If
+necessary to keep as such, rename to population_subset.
+Also compare to NCIt:(Clinical_)Study_Population_Subgroup
+((UMLS:C2347789)UMLS:C2348562).
+
+** syndrome
+Missing.
+ACGT:Syndrome
+DOID:225
+EFO:0000716
+MSH:D013577
+NCIt:Syndrome
+NDFRT:C5928
+UMLS:C0039082
+
+***************************************************************************

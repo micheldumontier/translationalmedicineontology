@@ -1,0 +1,172 @@
+# Saved by TopBraid on Mon Apr 23 23:20:28 CEST 2012
+# baseURI: http://example.org/temporary_namespace/resource/unnamed1
+# imports: http://example.org/genomic.ttl
+# imports: http://translationalmedicineontology.googlecode.com/svn/trunk/ontology/extensions/dbsnp_pharmacogenomics_core.ttl
+# imports: http://spinrdf.org/spinx
+# imports: http://www.w3.org/2001/sw/hcls/ns/transmed/tmo
+
+@prefix :        <http://example.org/temporary_namespace/resource/unnamed1#> .
+@prefix j.0:     <http://spinrdf.org/spin#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro:      <http://www.obofoundry.org/ro/ro.owl#> .
+@prefix sp:      <http://spinrdf.org/sp#> .
+@prefix spin:    <http://spinrdf.org/spin> .
+@prefix spinx:   <http://spinrdf.org/spinx#> .
+@prefix spl:     <http://spinrdf.org/spl#> .
+@prefix tmo:     <http://www.w3.org/2001/sw/hcls/ns/transmed/tmo#> .
+@prefix transmed:  <http://www.w3.org/2001/sw/hcls/ns/transmed/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/temporary_namespace/resource/unnamed1>
+      rdf:type owl:Ontology ;
+      <http://spinrdf.org/spin#imports>
+              <http://topbraid.org/spin/owlrl-all> ;
+      owl:imports <http://example.org/genomic.ttl> , <http://translationalmedicineontology.googlecode.com/svn/trunk/ontology/extensions/dbsnp_pharmacogenomics_core.ttl> , transmed:tmo , <http://spinrdf.org/spinx> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:CDS_recommendation
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "CDS recommendation "@en .
+
+:CYP2C9_1
+      rdf:type transmed:TMO_0048 ;
+      rdfs:label "CYP2C9*1"@en .
+
+:CYP2C9_2
+      rdf:type transmed:TMO_0048 ;
+      rdfs:label "CYP2C9*2"@en .
+
+:coumadin
+      rdf:type transmed:TMO_0002 ;
+      rdfs:label "coumadin "@en ;
+      ro:has_proper_part :warfarin .
+
+:human-1
+      rdf:type transmed:TMO_0124 ;
+      rdfs:label "human-1 "@en ;
+      :is_prescribed :coumadin ;
+      tmo:has_heterozygous_genetic_variant
+              :CYP2C9_1 , :CYP2C9_2 ;
+      tmo:has_homozygous_genetic_variant
+              :rs9923231_A ;
+      owl:topObjectProperty
+              :CYP2C9_1 .
+
+:human-2
+      rdf:type transmed:TMO_0124 ;
+      rdfs:label "human-2"@en ;
+      :is_prescribed :coumadin ;
+      tmo:has_homozygous_genetic_variant
+              :CYP2C9_1 , :rs9923231_G ;
+      owl:topObjectProperty
+              :CYP2C9_1 .
+
+:human-a
+      rdf:type transmed:TMO_0144 ;
+      rdfs:label "human-a "@en ;
+      tmo:has_genetic_variant
+              <http://example.org/genomic.ttl#variant_DNA_region_rs10038095_T> .
+
+:human_with_heterozygous_homozygous_data_consistency_error
+      rdf:type transmed:TMO_0124 ;
+      rdfs:label "human with heterozygous homozygous data consistency error "@en ;
+      tmo:has_heterozygous_genetic_variant
+              "CYP2C9_1"^^xsd:string ;
+      tmo:has_homozygous_genetic_variant
+              "CYP2C9_1"^^xsd:string .
+
+:is_prescribed
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain transmed:TMO_0124 ;
+      rdfs:label "is prescribed "@en ;
+      owl:propertyChainAxiom
+              (:is_prescribed ro:has_part) .
+
+:rs9923231_A
+      rdf:type transmed:TMO_0038 ;
+      rdfs:label "rs9923231(A)"@en .
+
+:rs9923231_G
+      rdf:type transmed:TMO_0038 ;
+      rdfs:label "rs9923231(G)"@en .
+
+:warfarin
+      rdf:type transmed:TMO_0000 ;
+      rdfs:label "warfarin "@en .
+
+transmed:TMO_0124
+      <http://spinrdf.org/spin#rule>
+              [ rdf:type sp:Construct ;
+                sp:templates ([ sp:object "3-4 mg warfarin is recommended as a starting dose." ;
+                            sp:predicate :CDS_recommendation ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ]) ;
+                sp:where ([ sp:object :warfarin ;
+                            sp:predicate :is_prescribed ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ] [ sp:object :CYP2C9_1 ;
+                            sp:predicate tmo:has_heterozygous_genetic_variant ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ] [ sp:object :CYP2C9_2 ;
+                            sp:predicate tmo:has_heterozygous_genetic_variant ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ] [ sp:object :rs9923231_A ;
+                            sp:predicate tmo:has_homozygous_genetic_variant ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ])
+              ] ;
+      <http://spinrdf.org/spin#rule>
+              [ rdf:type sp:Construct ;
+                sp:templates ([ sp:object "5-7 mg warfarin is recommended as a starting dose." ;
+                            sp:predicate :CDS_recommendation ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ]) ;
+                sp:where ([ sp:object :warfarin ;
+                            sp:predicate :is_prescribed ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ] [ sp:object :CYP2C9_1 ;
+                            sp:predicate tmo:has_homozygous_genetic_variant ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ] [ sp:object :rs9923231_G ;
+                            sp:predicate tmo:has_heterozygous_genetic_variant ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ] [ sp:object :rs9923231_A ;
+                            sp:predicate tmo:has_heterozygous_genetic_variant ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ])
+              ] ;
+      <http://spinrdf.org/spin#rule>
+              [ rdf:type sp:Construct ;
+                sp:templates ([ sp:object "5-7 mg warfarin is recommended as a starting dose." ;
+                            sp:predicate :CDS_recommendation ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ]) ;
+                sp:where ([ sp:object :warfarin ;
+                            sp:predicate :is_prescribed ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ] [ sp:object :CYP2C9_1 ;
+                            sp:predicate tmo:has_homozygous_genetic_variant ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ] [ sp:object :rs9923231_G ;
+                            sp:predicate tmo:has_homozygous_genetic_variant ;
+                            sp:subject <http://spinrdf.org/spin#_this>
+                          ])
+              ] .
+
+tmo:has_genetic_variant
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has genetic variant "@en .
+
+tmo:has_heterozygous_genetic_variant
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has heterozygous genetic variant "@en ;
+      rdfs:subPropertyOf tmo:has_genetic_variant .
+
+tmo:has_homozygous_genetic_variant
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has homozygous genetic variant"@en ;
+      rdfs:subPropertyOf tmo:has_genetic_variant ;
+      owl:propertyDisjointWith
+              tmo:has_heterozygous_genetic_variant .

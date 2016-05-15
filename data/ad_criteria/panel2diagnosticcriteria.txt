@@ -1,0 +1,51 @@
+Probable AD: A plus one or more supportive features B, C, D, or E 
+Core diagnostic criteria 
+A. Presence of an early and significant episodic memory impairment that includes the 
+following features: 
+ 1. Gradual and progressive change in memory function reported by patients or 
+informants over more than 6 months 
+ 2. Objective evidence of signifcantly impaired episodic memory on testing: this 
+generally consists of recall deficit that does not improve significantly or does not 
+normalise with cueing or recognition testing and after effective encoding of 
+information has been previously controlled 
+ 3. The episodic memory impairment can be isolated or associated with other cognitive 
+changes at the onset of AD or as AD advances 
+Supportive features 
+B. Presence of medial temporal lobe atrophy 
+•  Volume loss of hippocampi, entorhinal cortex, amygdala evidenced on MRI with 
+qualitative ratings using visual scoring (referenced to well characterised population 
+with age norms) or quantitative volumetry of regions of interest (referenced to well 
+characterised population with age norms) 
+C. Abnormal cerebrospinal fluid biomarker 
+•  Low amyloid ß1–42 concentrations, increased total tau concentrations, or increased 
+phospho-tau concentrations, or combinations of the three 
+•  Other well validated markers to be discovered in the future 
+D. Specific pattern on functional neuroimaging with PET 
+•  Reduced glucose metabolism in bilateral temporal parietal regions 
+•  Other well validated ligands, including those that foreseeably will emerge such as 
+Pittsburg compound B or FDDNP 
+E. Proven AD autosomal dominant mutation within the immediate family 
+Exclusion criteria 
+History 
+•  Sudden onset 
+•  Early occurrence of the following symptoms: gait disturbances, seizures, 
+behavioural changes 
+Clinical features 
+•  Focal neurological features including hemiparesis, sensory loss, visual field 
+deficits 
+•  Early extrapyramidal signs 
+Other medical disorders severe enough to account for memory and related symptoms 
+•  Non-AD dementia 
+•  Major depression 
+•  Cerebrovascular disease 
+•  Toxic and metabolic abnormalities, all of which may require specific 
+investigations 
+•  MRI FLAIR or T2 signal abnormalities in the medial temporal lobe that are 
+consistent with infectious or vascular insults 
+Criteria for definite AD 
+AD is considered definite if the following are present: 
+• Both clinical and histopathological (brain biopsy or autopsy) evidence of the 
+disease, as required by the NIA-Reagan criteria for the post-mortem diagnosis of 
+AD; criteria must both be present139 
+•  Both clinical and genetic evidence (mutation on chromosome 1, 14, or 21) of AD; 
+criteria must both be present

@@ -1,0 +1,41 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.            
+<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs> owl:equivalentClass <http://dbpedia.org/ontology/Drug>.
+<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/drugs>.
+<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs>.
+<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs> owl:equivalentClass <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine>.
+<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/medicare/resource/medicare/drugs>.
+
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/drugs> owl:equivalentClass <http://dbpedia.org/ontology/Drug>.
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/drugs> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs>.
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/drugs> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs>.
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/drugs> owl:equivalentClass <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine>.
+<http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/drugs> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/medicare/resource/medicare/drugs>.
+ 
+<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/drugs>.
+<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs> owl:equivalentClass <http://dbpedia.org/ontology/Drug>.
+<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs> owl:equivalentClass <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine>.
+<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs>.
+<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/medicare/resource/medicare/drugs>.
+ 
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/drugs>.
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine> owl:equivalentClass <http://dbpedia.org/ontology/Drug>.
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs>.
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/drugs>.
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Medicine> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/medicare/resource/medicare/drugs>.
+ 
+<http://data.linkedct.org/resource/linkedct/condition> owl:equivalentClass <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Disease>.
+<http://data.linkedct.org/resource/linkedct/condition> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases>.
+<http://data.linkedct.org/resource/linkedct/condition> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/side_effects>.
+
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Disease> owl:equivalentClass <http://data.linkedct.org/resource/linkedct/condition>.
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Disease> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases>.
+<http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Disease> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/side_effects>.
+
+<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/side_effects> owl:equivalentClass <http://data.linkedct.org/resource/linkedct/condition>.
+<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/side_effects> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases>.
+<http://www4.wiwiss.fu-berlin.de/sider/resource/sider/side_effects> owl:equivalentClass <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Disease>.
+
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases> owl:equivalentClass <http://data.linkedct.org/resource/linkedct/condition>.
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases> owl:equivalentClass <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/side_effects>.
+<http://www4.wiwiss.fu-berlin.de/diseasome/resource/diseasome/diseases> owl:equivalentClass <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/Disease>.
+
